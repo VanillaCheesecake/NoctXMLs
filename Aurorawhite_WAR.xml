@@ -77,7 +77,7 @@
 		</set>
 		
 		<set name="WS">
-			<ammo>Crepuscular Pebble</ammo>
+			<ammo>Knobkierrie</ammo>
 		
 			<head>Agoge Mask +3</head>
 			<body>Pumm. Lorica +3</body>
@@ -94,7 +94,7 @@
 		</set>
 		
 		<set name="Default">
-			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
+			<ammo augment="S7978882493864118577">Staunch Tathlum +1</ammo>
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>

@@ -44,7 +44,7 @@
 		</set>
 		
 		<set name="Default">
-			<ammo>Pemphredo Tathlum</ammo>
+			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo> <!-- Refresh +80 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>

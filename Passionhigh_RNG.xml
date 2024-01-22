@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="RNG"><setvar name="macrobook" value="11" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/11-RNG</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
 		<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
+	
 	<sets>
 	
 		<set name="Nexus">
@@ -35,10 +31,6 @@
 			<ring2 augment="S190012252531924424">Ifrit Ring +1</ring2>
 			<back augment="S190012252531924424">Relucent Cape</back>
 		</set>
-	
-
-	
-	
 	
 		<set name="Default">
 			
@@ -92,7 +84,7 @@
 		</set>
 		
 		<set name="Preshot"> <!-- All Snap Shot and Rapid Shot quotations here are assumed base, before augments -->
-		<head>Amini Gapette +1</head> <!-- Snap Shot +7 Base --> <!-- Snap Shot +40 -->
+		<head>Volte Tiara</head> <!-- Snap Shot +3 Base --> <!-- Snap Shot +40 -->
 		<neck>Scout's Gorget +2</neck> <!-- Snap Shot +4 Base --> <!-- Unaugable -->
 		<body>Arc. Jerkin +1</body> <!-- Snap Shot +7 Base --> <!-- Rapid Shot +32 -->
 		<hands augment="S9732114896294722659">Carmine Fin. Ga. +1</hands> <!-- Snapshot +8, Rapid Shot +11 Base --> <!-- MAB/MACC+48 -->
@@ -221,7 +213,7 @@
 		<set name="Magical">
 			<head>Arcadian Beret +3</head> <!-- Recycle +40 -->
 			<body>Gyve Doublet</body> <!-- MACC/MAB+48 -->
-			<hands augment="S367311207878168552">Carmine Fin. Ga. +1</hands> <!-- MAB MACC+48 -->
+			<hands augment="S367311207878168552">Carmine Fin. Ga. +1</hands> <!-- SAVE TP -->
 			<legs>Gyve Trousers</legs> <!-- MACC/MAB+48 -->
 			<feet>Adhe. Gamashes +1</feet> <!-- MACC/MAB+48 -->
 			<neck>Baetyl Pendant</neck> <!-- MACC/MAB+48 -->
@@ -848,7 +840,6 @@
 <premagic>
 	<equip set="FastCast" />
 	</premagic>
-
 
 	<preranged>
 		<equip set="Preshot" />

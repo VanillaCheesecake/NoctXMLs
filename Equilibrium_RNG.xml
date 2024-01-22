@@ -5,33 +5,14 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="RNG"><setvar name="macrobook" value="11" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/11-RNG</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
-	<command>/bind F9 /th</command>
+		<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
-	<sets>
 	
-		<set name="Jishnu">
-			<head>Orion Beret +3</head>
-			<body>Orion Jerkin +3</body>
-			<hands>Orion Bracers +3</hands>
-			<legs>Orion Braccae +3</legs>
-			<feet>Orion Socks +3</feet>
-			<neck>Flame Gorget</neck>
-			<waist>Flame Belt</waist>
-			<ear1>Enervating Earring</ear1>
-			<ear2>Ishvara Earring</ear2>
-			<ring1>Dingir Ring</ring1>
-			<ring2>Regal Ring</ring2>
-			<back>Moondoe Mantle +1</back>
-		</set>
+	<sets>
 	
 		<set name="Nexus">
 			<back>Nexus Cape</back>
@@ -51,14 +32,6 @@
 			<back augment="S190012252531924424">Relucent Cape</back>
 		</set>
 	
-
-	
-
-	
-		<set name="Preshot" baseset="Main">
-		
-		</set>
-		
 		<set name="Default">
 			
 			<head>Volte Cap</head>
@@ -68,16 +41,15 @@
 			<feet>Volte Boots</feet>
 			
 			<neck>Warder's Charm +1</neck>
-			<waist>Resolute Belt</waist>
+			<waist>Flume Belt +1</waist> <!-- Counter 40 -->
 			<ear1>Hearty Earring</ear1>
-			<ear2>Sanare Earring</ear2>
+			<ear2>Sanare Earring</ear2> <!-- Counter 40 -->
 			<ring1>Shadow Ring</ring1>
 			<ring2>Vocane Ring</ring2>
 			<back>Shadow Mantle</back>
 		</set>
 	
-		<set name="Main">
-			
+		<set name="Main"> <!-- Largely unused -->
 			<head>Orion Beret +3</head>
 			<body>Orion Jerkin +3</body>
 			<hands>Orion Bracers +3</hands>
@@ -88,25 +60,71 @@
 			<ear1>Telos Earring</ear1>
 			<ear2>Enervating Earring</ear2>
 			<ring1>Petrov Ring</ring1>
-			<ring2>Apate Ring</ring2>
+			<ring2>Dingir Ring</ring2>
 			<back>Lutian Cape</back>
+		</set>
+		
+		<set name="RATT">
+		<head>Orion Beret +3</head> <!-- Recycle +40 -->
+		<neck>Scout's Gorget +2</neck> <!-- Unaugmentable -->
+		<body>Adhemar Jacket +1</body> <!-- TA+16-->
+		<hands>Meg. Gloves +2</hands>  <!-- TA+16-->
+		<legs>Arc. Braccae +3</legs>  <!-- TA+16-->
+		<feet>Arcadian Socks +3</feet>  <!-- TA+16-->
+		<ear1>Balder Earring</ear1> <!-- STP+SB +60 -->
+		<ear2>Ishvara Earring</ear2> <!-- TA+16-->
+		<ring1>Dingir Ring</ring1> <!-- TPB +600 -->
+		<ring2>Regal Ring</ring2> <!-- TA+16-->
+		<waist>Flame Belt</waist> <!-- TPB +600 -->
+		<back>Moondoe Mantle +1</back> <!-- TPB +600 -->
+		</set>
+		
+		<set name="HeroicsRATT" baseset="RATT">
+		<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>
+		
+		<set name="Preshot"> <!-- All Snap Shot and Rapid Shot quotations here are assumed base, before augments -->
+		<head>Volte Tiara</head> <!-- Snap Shot +3 Base --> <!-- Snap Shot +40 -->
+		<neck>Scout's Gorget +2</neck> <!-- Snap Shot +4 Base --> <!-- Unaugable -->
+		<body>Arc. Jerkin +1</body> <!-- Snap Shot +7 Base --> <!-- Rapid Shot +32 -->
+		<hands augment="S9732114896294722659">Carmine Fin. Ga. +1</hands> <!-- Snapshot +8, Rapid Shot +11 Base --> <!-- MAB/MACC+48 -->
+		<legs>Orion Braccae +3</legs> <!-- Snapshot +15 Base --> <!-- STP+SB +60 -->
+		<feet>Meg. Jam. +2</feet> <!-- Snapshot +10 Base --> <!-- STP+SB +60 -->
+		<ring1>Haverton Ring</ring1> <!-- Snap Shot +6 Base --> <!-- Snap Shot +20, Rapid Shot +16 -->
+		<ring2>Crepuscular Ring</ring2> <!-- Snap Shot +6 Base --> <!-- No Augs, not necessary -->
+		<waist>Impulse Belt</waist>  <!-- Snapshot +3 Base --> <!-- Rapid Shot +32 -->
+		</set>
+		
+		<set name="Midshot" baseset="Preshot"> <!-- Recycle(Base Recycle is 10), Store TP and RACC/RATT goes here -->
+		<head>Arcadian Beret +3</head> <!-- Recycle +40 -->
+		<body>Meg. Cuirie +2</body>  <!-- TA+16-->
+		<hands>Orion Bracers +3</hands> <!-- STP+SB +60 -->
+		<legs>Orion Braccae +3</legs> <!-- STP+SB +60 -->
+		<feet>Meg. Jam. +2</feet> <!-- STP+SB +60 -->
+		<neck>Ocachi Gorget</neck> <!-- STP+SB +60 -->
+		<ring1>Hajduk Ring +1</ring1> <!-- STP+SB +60 -->
+		<ring2>Hajduk Ring +1</ring2> <!-- STP+SB +60 -->
+		<ear1 augment="S12333616283242828716">Balder Earring</ear1> <!-- STP+SB +60 -->
+		<ear2>Crep. Earring</ear2> <!-- STP+SB +60 -->
+		<waist>Yemaya Belt</waist> <!-- STP+SB +60 -->
+		<back>Quarrel Mantle</back><!-- STP+SB +60 -->
 		</set>
 
 		
-		<set name="FTP" baseset="Main">
-			<waist>Fotia Belt</waist>
-			<neck>Fotia Gorget</neck>
-			<ring2>Apate Ring</ring2>
-			<back>Lutian Cape</back>
-			<!-- <ear1 augment="S182109392119204240">Mache Earring +1</ear1> -->
-			<!-- <back>Annealed Mantle</back> -->
+		<set name="FTP" baseset="Main"> <!-- Melee -->
+
 		</set>
 		
-		<set name="WS" baseset="Main">
-			<waist>Ponente Sash</waist>
-			<neck>Marked Gorget</neck>
-			<ring2>Apate Ring</ring2>
-			<back>Lutian Cape</back>
+		<set name="HeroicsFTP" baseset="FTP"> <!-- Melee -->
+
+		</set>
+		
+		<set name="WS" baseset="Main">  <!-- Melee -->
+
+		</set>
+		
+		<set name="HeroicsWS" baseset="WS">  <!-- Melee -->
+
 		</set>
 		
 		<set name="TH" baseset="Default" lock="true">
@@ -179,37 +197,71 @@
 			<body>Orion Jerkin +3</body>
 		</set>
 		
+		<set name="Barrage">
+			<hands>Orion Bracers +3</hands> <!-- +3 shots -->
+			<legs>Adhemar Kecks +1</legs> <!-- +5 shots -->
+		</set>
+		
+		<set name="Sharpshot">
+			<legs>Orion Braccae +3</legs>
+		</set>
+		
+		<set name="Nuke" baseset="Magical"> <!-- This is for spells -->
+			<head>Herculean Helm</head> <!-- MAB/MACC +48 -->
+		</set>
+		
 		<set name="Magical">
-			<head>Arcadian Beret +3</head>
-			<body>Gyve Doublet</body>
-			<hands>Carmine Fin. Ga. +1</hands>
-			<legs>Gyve Trousers</legs>
-			<feet>Adhe. Gamashes +1</feet>
-			<neck>Baetyl Pendant</neck>
-			<waist >Eschan Stone</waist>
-			<ear1>Hecate's Earring</ear1>
-			<ear2>Friomisi Earring</ear2>
-			<ring1>Stikini Ring +1</ring1>
-			<ring2>Stikini Ring +1</ring2>
-			<back>Izdubar Mantle</back>
+			<head>Arcadian Beret +3</head> <!-- Recycle +40 -->
+			<body>Gyve Doublet</body> <!-- MACC/MAB+48 -->
+			<hands augment="S367311207878168552">Carmine Fin. Ga. +1</hands> <!-- SAVE TP -->
+			<legs>Gyve Trousers</legs> <!-- MACC/MAB+48 -->
+			<feet>Adhe. Gamashes +1</feet> <!-- MACC/MAB+48 -->
+			<neck>Baetyl Pendant</neck> <!-- MACC/MAB+48 -->
+			<waist>Eschan Stone</waist> <!-- MACC/MAB+48 -->
+			<ear1>Friomisi Earring</ear1> <!-- MACC/MAB+48 -->
+			<ear2>Crematio Earring</ear2> <!-- MACC/MAB+48 -->
+			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+48 -->
+			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+48 -->
+			<back>Izdubar Mantle</back> <!-- MACC/MAB+48 -->
 		</set>
 		
-		<set name="Nuke">
-			<head>Pixie Hairpin +1</head>
-			<body>Gyve Doublet</body>
-			<hands>Orion Bracers +3</hands>
-			<legs>Gyve Trousers</legs>
-			<feet>Orion Socks +3</feet>
-			<neck>Baetyl Pendant</neck>
-			<waist >Eschan Stone</waist>
-			<ear1>Hecate's Earring</ear1>
-			<ear2>Friomisi Earring</ear2>
-			<ring1>Stikini Ring +1</ring1>
-			<ring2>Stikini Ring +1</ring2>
-			<back>Izdubar Mantle</back>
+		<set name="MagicalMelee" baseset="Magical">
+			<head>Herculean Helm</head> <!-- MACC/MAB+48 -->
 		</set>
 		
- 
+		<set name="HeroicsMagical" baseset="Magical">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>
+		
+		<set name="HeroicsMagicalMelee" baseset="MagicalMelee">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>
+		
+		<set name="LightATT" baseset="Magical">
+			<ring1>Weather. Ring</ring1>  <!-- MACC/MAB+48 -->
+			<ring2>Weather. Ring +1</ring2>  <!-- Save TP + 200 --> <!-- One day... -->
+		</set>
+		
+		<set name="LightATTMelee" baseset="MagicalMelee">
+			<ring1>Weather. Ring</ring1>  <!-- MACC/MAB+48 -->
+			<ring2>Weather. Ring +1</ring2>  <!-- Save TP + 200 --> <!-- One day... -->
+		</set>
+		
+		<set name="HeroicsLightATT" baseset="LightATT">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>	
+		
+		<set name="HeroicsLightATTMelee" baseset="LightATTMelee">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>	
+		
+		<set name="DarkATT" baseset="Magical">
+			<head>Pixie Hairpin +1</head>  <!-- MACC/MAB+48 -->
+		</set>
+		
+		<set name="HeroicsDarkATT" baseset="DarkATT">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>	
 		
 		<set name="Cure" baseset="FastCast"> <!-- Do not use this set if WHM -->
 			<neck>Phalaina Locket</neck>
@@ -221,7 +273,18 @@
 			<back>Solemnity Cape</back>
 		</set>
 		
-
+		<set name="Balder Earring (STP)"> <!-- ID reference only -->
+			<ear2 augment="S12333616283242828716">Balder Earring</ear2>
+		</set>
+		
+		<set name="Carmine Gloves (MAB)"> <!-- ID reference only -->
+			<hands augment="S9732114896294722659">Carmine Fin. Ga. +1</hands>
+		</set>
+		
+		<set name="Carmine Gloves (Save TP)"> <!-- ID reference only -->
+			<hands augment="S367311207878168552">Carmine Fin. Ga. +1</hands>
+		</set>
+		
 	</sets>
 
 	<variables>
@@ -783,11 +846,11 @@
 	</preranged>
 
 	<midranged>
-		<equip set="Main" />
+		<equip set="Midshot" />
 	</midranged>
-	
+
 <midmagic>
-				
+		
 		
 		<!-- stoneskin check -->
 		<if ad_name="Stoneskin|Metallic Body|Diamondhide">
@@ -797,7 +860,6 @@
 		<registerbuff id="37" active="false" />	
 		</if>
 		</if>
-		
 		<!-- enspells -->
 		<if ad_name="Enfire*|Enblizzard*|Enaero*|Enstone*|Enthunder*|Enwater*|Endark*|Enlight*"><equip set="Enspell" />
 		<gearlock length="1" />
@@ -838,7 +900,7 @@
 		<if ad_name="Cure*|Cura*|White Wind|Restoral|Plenilune Embrace|Exuviation|Magic Fruit|Pollen|Wild Carrot|Healing Breeze"><equip set="Cure" /></if>
 
 		
-		<!-- skill sets -->
+				<!-- skill sets -->
 		<if ad_name="Stoneskin|Diamondhide|Metallic Body|Protect*|Shell*|Bar*|Boost*|Blink|Aquaveil|Phalanx|Haste*|Flurry*|Regen*|Temper|Refresh*|Sandstorm*|Rainstorm*|Windstorm*|Firestorm*|Hailstorm*|Thunderstorm*|Voidstorm*|Aurorastorm*|Animus*|Gain-*|Invisible|
 		Sneak|Deodorize|Embrava|Klimaform"><equip set="FastCast" /></if>
 		
@@ -848,12 +910,30 @@
 
 	<jobability>
 		<if ad_name="Scavenge"><equip set="Scavenge" /></if>
-		<if ad_name="Souleater"><equip set="Souleater" /></if>
+		<if ad_name="Barrage"><equip set="Barrage" /></if>
     </jobability>
 
 	<weaponskill>
+	
+		<if advanced="$Heroics=1"> <!-- Checks to see if the player is in a heroics zone or not -->
+		<equip set="HeroicsWS" />
+		<if ad_name="Jishnu's Radiance|Last Stand|Slug Shot|Blast Shot|Heavy Shot|Detonator|Coronach|Numbing Shot|Sidewinder|Blast Arrow|Arching Arrow|Empyreal Arrow|Namas Arrow|Refulgent Arrow|Apex Arrow"><equip set="HeroicsRATT" /></if>
+		<if ad_name="Flaming Arrow|Wildfire|Hot Shot|Burning Blade"><equip set="HeroicsMagical" /></if>
+		<if ad_name="Aeolian Edge|Red Lotus Blade|Burning Blade|Cyclone"><equip set="HeroicsMagicalMelee" /></if>
+		<if ad_name="Sanguine Blade"><equip set="HeroicsDarkATT" /></if>
+		<if ad_name="Trueflight"><equip set="HeroicsLightATT" /></if>
+		<if ad_name="Uriel Blade|Seraph Blade|Shining Blade"><equip set="HeroicsLightATTMelee" /></if>
+		</if>
+	
+		<else>  <!-- Runs when player isn't in a heroics zone -->
 		<equip set="WS" />
-		<if ad_name="Jishnu's Radiance"><equip set="Jishnu" /></if>
-		<if ad_name="Trueflight|Flaming Arrow|Hot Shot|Wildfire"><equip set="Magical" /></if>
+		<if ad_name="Jishnu's Radiance|Last Stand|Slug Shot|Blast Shot|Heavy Shot|Detonator|Coronach|Numbing Shot|Sidewinder|Blast Arrow|Arching Arrow|Empyreal Arrow|Namas Arrow|Refulgent Arrow|Apex Arrow"><equip set="RATT" /></if>
+		<if ad_name="Flaming Arrow|Wildfire|Hot Shot"><equip set="Magical" /></if>
+		<if ad_name="Aeolian Edge|Red Lotus Blade|Burning Blade|Cyclone"><equip set="MagicalMelee" /></if>
+		<if ad_name="Sanguine Blade"><equip set="DarkATT" /></if>
+		<if ad_name="Trueflight"><equip set="LightATT" /></if>
+		<if ad_name="Uriel Blade|Seraph Blade|Shining Blade"><equip set="LightATTMelee" /></if>
+		</else>
+
 	</weaponskill>
 </ashitacast>

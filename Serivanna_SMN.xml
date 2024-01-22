@@ -304,24 +304,6 @@
 			<main augment="S21158190741924649262">Nirvana</main>  <!-- Pet Regen -->
 		</set>
 
-		<set name="skill2">
-			<main augment="S276514213788546438">Exemplar</main>
-			<sub augment="S276514213788546438">Vox Grip</sub>
-			<range augment="S276514213788546438">Clothespole</range>
-			<ammo augment="S276514213788546438">Fly Lure</ammo>
-			<head augment="S276514213788546438">Convoker's Horn +2</head>
-			<body augment="S276514213788546438">Beck. Doublet +1</body>
-			<hands augment="S276514213788546438">Glyphic Bracers +3</hands>
-			<legs augment="S276514213788546438">Beck. Spats +1</legs>
-			<feet augment="S276514213788546438">Mdk. Crackows +1</feet>
-			<neck augment="S276514213788546438">Caller's Pendant</neck>
-			<waist augment="S276514213788546438">Kobo Obi</waist>
-			<ear1 augment="S276514213788546438">Andoaa Earring</ear1>
-			<ear2 augment="S276514213788546438">Smn. Earring</ear2>
-			<ring1 augment="S276514213788546438">Evoker's Ring</ring1>
-			<ring2 augment="S276514213788546438">Stikini Ring +1</ring2>
-			<back augment="S276514213788546438">Campestres's Cape</back>
-		</set>
 		<set name="Skillsachet">
 			<ammo augment="S8042878483075818726">Sancus Sachet +1</ammo>
 		</set>

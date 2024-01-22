@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="COR"><setvar name="macrobook" value="17" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/17-COR</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
 	<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
+	
 	<sets>
 	
 		<set name="Movement" baseset="Default">
@@ -43,7 +39,7 @@
 		</set>
 	
 		<set name="Default">
-			<ammo>Devastating Bullet</ammo>
+			<ammo>Bullet</ammo>
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -62,10 +58,7 @@
 	
 	
 		<set name="Main">
-			<!-- <main augment="S7973728454464518565">Fettering Blade</main> -->
-			<!-- <sub augment="S14963464886888734839">Arendsi Fleuret</sub> -->
-			<!-- <range>Armageddon</range> -->
-			<ammo augment="S22672">Devastating Bullet</ammo>
+			<ammo>Bullet</ammo>
 			<head>Whirlpool Mask</head>
 			<body>Foppish Tunica</body>
 			<hands>Meg. Gloves +2</hands>
@@ -97,26 +90,26 @@
 		</set>
 		
 		<set name="Magical">
-			<ammo>Living Bullet</ammo>
+			<ammo augment="S21202000076821249364">Living Bullet</ammo>
 			<head>Laksa. Tricorne +3</head>
 			<body>Lanun Frac +3</body>
-			<hands>Laksa. Gants +3</hands>
+			<hands augment="S9732114896294722659">Carmine Fin. Ga. +1</hands> <!-- Snapshot +8, Rapid Shot +11 Base --> <!-- MAB/MACC+48 -->
 			<legs>Laksa. Trews +3</legs>
 			<feet>Lanun Bottes +3</feet>
 			<neck>Baetyl Pendant</neck>
-			<waist>Eschan Stone</waist>
+			<waist augment="S367311207878168552">Skrymir Cord +1</waist>
 			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
+			<ear2>Crematio Earring</ear2>
 			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
 			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
-			<back augment="S7973728454464518565">Gunslinger's Cape</back>
+			<back augment="S9732114896294722659">Gunslinger's Cape</back>
 		</set>
 		
 		<set name="Quickdraw">
 			<ammo>Omphalos Bullet</ammo> <!-- QD -4 -->
 			<head>Laksa. Tricorne +3</head>
 			<body>Lanun Frac +3</body>
-			<hands>Laksa. Gants +3</hands>
+			<hands augment="S9732114896294722659">Carmine Fin. Ga. +1</hands> <!-- Snapshot +8, Rapid Shot +11 Base --> <!-- MAB/MACC+48 -->
 			<legs>Laksa. Trews +3</legs>
 			<feet>Chass. Bottes +1</feet>  <!-- QD -4 -->
 			<neck>Baetyl Pendant</neck>
@@ -129,38 +122,23 @@
 		</set>	
 		
 		<set name="Nuke">
-			<ammo>Living Bullet</ammo>
+			<ammo augment="S9732114896294722659">Living Bullet</ammo>
 			<head>Laksa. Tricorne +3</head>
 			<body>Lanun Frac +3</body>
-			<hands>Laksa. Gants +3</hands>
+			<hands augment="S9732114896294722659">Carmine Fin. Ga. +1</hands> <!-- Snapshot +8, Rapid Shot +11 Base --> <!-- MAB/MACC+48 -->
 			<legs>Laksa. Trews +3</legs>
 			<feet>Lanun Bottes +3</feet>
 			<neck>Baetyl Pendant</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
+			<ear2>Crematio Earring</ear2>
 			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
 			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
-			<back augment="S7973728454464518565">Gunslinger's Cape</back>
-		</set>
-		
-		<set name="MagicalDark">
-			<ammo>Living Bullet</ammo>
-			<head>Pixie Hairpin +1</head>
-			<body>Lanun Frac +3</body>
-			<hands>Laksa. Gants +3</hands>
-			<legs>Laksa. Trews +3</legs>
-			<feet>Lanun Bottes +3</feet>
-			<neck>Baetyl Pendant</neck>
-			<waist>Eschan Stone</waist>
-			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
-			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
-			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
-			<back augment="S7973728454464518565">Gunslinger's Cape</back>
+			<back augment="S9732114896294722659">Gunslinger's Cape</back>
 		</set>
 		
 		<set name="Sanguine" baseset="Darknuke">
+		<ammo augment="S9732114896294722659">Living Bullet</ammo>
 		</set>
 		
 		
@@ -214,9 +192,10 @@
 		</set>
 		
 		<set name="DarkNuke">
+			<ammo augment="S9732114896294722659">Living Bullet</ammo>
 			<head>Pixie Hairpin +1</head>
 			<body>Lanun Frac +3</body>
-			<hands>Laksa. Gants +3</hands>
+			<hands augment="S9732114896294722659">Carmine Fin. Ga. +1</hands> <!-- Snapshot +8, Rapid Shot +11 Base --> <!-- MAB/MACC+48 -->
 			<legs>Laksa. Trews +3</legs>
 			<feet>Lanun Bottes +3</feet>
 			<neck>Baetyl Pendant</neck>
@@ -225,10 +204,8 @@
 			<ear2>Hecate's Earring</ear2>
 			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
 			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
-			<back augment="S7973728454464518565">Gunslinger's Cape</back>
+			<back augment="S9732114896294722659">Gunslinger's Cape</back>
 		</set>
-		
- 
 		
 		<set name="Enspell">
 			<main augment="S8301439459622419328">Wind Knife</main>
@@ -263,7 +240,7 @@
 			<ammo>Devastating Bullet</ammo>
 			<head>Lanun Tricorne +3</head>
 			<body>Laksa. Frac +3</body>
-			<hands>Lanun Gants +3</hands>
+			<hands>Meg. Gloves +2</hands>
 			<legs>Lanun Trews +3</legs>
 			<feet>Lanun Bottes +3</feet>
 			<neck>Flame Gorget</neck>
@@ -275,19 +252,26 @@
 			<back>Moondoe Mantle +1</back>
 		</set>
 		
+		<set name="HeroicsRATT" baseset="RATT">
+		<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>
 		
-		<set name="Preshot"> <!--This is your pre-shot set that you use as you take out your gun! Snapshot and rapid shot mostly here -->
+		<set name="Preshot"> <!--This is your pre-shot set that you use as you take out your gun! Snapshot and rapid shot mostly here -->	
+		<ammo>Devastating Bullet</ammo>
+		<head>Volte Tiara</head>
 		<neck>Comm. Charm +2</neck> <!-- Snapshot +4 -->
 		<body>Laksa. Frac +3</body> <!-- Rapid Shot +20 --> 
 		<legs>Laksa. Trews +3</legs> <!-- Snapshot +15 -->
 		<hands>Lanun Gants +3</hands> <!-- Snapshot +13 -->
 		<feet>Meg. Jam. +2</feet> <!-- Snapshot +10 -->
+		<ring1>Haverton Ring</ring1>
+		<ring2>Crepuscular Ring</ring2>
 		<back>Navarch's Mantle</back> <!-- Snapshot +6 -->
-		<head>Volte Tiara</head> <!-- Snapshot +3 -->
 		<waist>Impulse Belt</waist> <!-- Snapshot +3 -->
 		</set>
 		
 		<set name="Midshot"> <!--Store TP and RACC/RATT goes here, AM3 improves RACC by 60. -->
+		<ammo>Devastating Bullet</ammo>
 		<head>Meghanada Visor +2</head>
 		<body>Meg. Cuirie +2</body>
 		<hands>Mummu Wrists +2</hands>
@@ -301,7 +285,58 @@
 		<ring2>Hajduk Ring +1</ring2>
 		<waist>Yemaya Belt</waist>
 		</set>
+		
+		<set name="HeroicsFTP" baseset="FTP"> <!-- Melee -->
+		<feet>Heidrek Boots</feet>
+		</set>
+		
+		<set name="HeroicsWS" baseset="WS">  <!-- Melee -->
+		<feet>Heidrek Boots</feet>
+		</set>
+		
+		<set name="MagicalMelee" baseset="Magical">
+			<ammo augment="S9732114896294722659">Living Bullet</ammo>
+			<head>Herculean Helm</head> <!-- MACC/MAB+48 -->
+		</set>
+		
+		<set name="HeroicsMagical" baseset="Magical">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>
+		
+		<set name="HeroicsMagicalMelee" baseset="MagicalMelee">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>
+		
+		<set name="LightATTMelee" baseset="MagicalMelee">
+			<ring1>Weather. Ring</ring1>  <!-- MACC/MAB+48 -->
+			<ring2>Weather. Ring +1</ring2>  <!-- Save TP + 200 --> <!-- One day... -->
+		</set>	
+		
+		<set name="HeroicsLightATTMelee" baseset="LightATTMelee">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>	
+		
+		<set name="DarkATT" baseset="Magical">
+			<head>Pixie Hairpin +1</head>  <!-- MACC/MAB+48 -->
+		</set>
+		
+		<set name="HeroicsDarkATT" baseset="DarkATT">
+			<feet>Heidrek Boots</feet> <!-- TA+16-->
+		</set>	
+		
 
+		<set name="RecycleBullet">
+			<ammo augment="S21202000076821249364">Living Bullet</ammo>
+		</set>
+		<set name="MABLiving">
+			<ammo augment="S9732114896294722659">Living Bullet</ammo>
+		</set>
+		<set name="MABGunslinger">
+			<back augment="S9732114896294722659">Gunslinger's Cape</back>
+		</set>
+		<set name="SaveTPSkrymir">
+			<waist augment="S367311207878168552">Skrymir Cord +1</waist>
+		</set>
 	</sets>
 
 	<variables>
@@ -870,13 +905,13 @@
 	
 	</idlegear>
 
-    <preranged>
-        <equip set="Preshot" />
-    </preranged>
+	<preranged>
+		<equip set="Preshot" />
+	</preranged>
 
-    <midranged>
-        <equip set="Midshot" />
-    </midranged>
+	<midranged>
+		<equip set="Midshot" />
+	</midranged>
 
 	<premagic>
 	<equip set="FastCast" />
@@ -949,15 +984,44 @@
 		
 </midmagic>
 
+	<!-- <weaponskill> -->
+		<!-- <equip set="WS" /> -->
+		<!-- <if ad_name="Wildfire|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade|Earth Crusher|Tartarus Torpor"><equip set="Magical" /></if> -->
+		<!-- <if ad_name="Leaden Salute"><equip set="MagicalDark" /></if> -->
+		<!-- <if ad_name="Savage Blade|Expiacion"><equip set="WS" /></if> -->
+		<!-- <if ad_name="Requiescat"><equip set="FTP" /></if> -->
+		<!-- <if ad_name="Evisceration"><equip set="FTP" /></if> -->
+		<!-- <if ad_name="Last Stand"><equip set="RATT" /></if> -->
+	<!-- </weaponskill> -->
+	
 	<weaponskill>
+	
+		<if advanced="$Heroics=1"> <!-- Checks to see if the player is in a heroics zone or not -->
+		<equip set="HeroicsWS" />
+		<if ad_name="Savage Blade|Expiacion"><equip set="HeroicsWS" /></if>
+		<if ad_name="Jishnu's Radiance|Last Stand|Slug Shot|Blast Shot|Heavy Shot|Detonator|Coronach|Numbing Shot|Sidewinder|Blast Arrow|Arching Arrow|Empyreal Arrow|Namas Arrow|Refulgent Arrow|Apex Arrow"><equip set="HeroicsRATT" /></if>
+		<if ad_name="Flaming Arrow|Wildfire|Hot Shot|Burning Blade"><equip set="HeroicsMagical" /></if>
+		<if ad_name="Aeolian Edge|Red Lotus Blade|Burning Blade|Cyclone"><equip set="HeroicsMagicalMelee" /></if>
+		<if ad_name="Sanguine Blade|Leaden Salute"><equip set="HeroicsDarkATT" /></if>
+		<if ad_name="Uriel Blade|Seraph Blade|Shining Blade"><equip set="HeroicsLightATTMelee" /></if>
+		<if ad_name="Evisceration"><equip set="HeroicsCrit" /></if>
+		<if ad_name="Requiescat"><equip set="HeroicsFTP" /></if>
+		</if>
+	
+		<else>  <!-- Runs when player isn't in a heroics zone -->
 		<equip set="WS" />
-		<if ad_name="Wildfire|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade|Earth Crusher|Tartarus Torpor"><equip set="Magical" /></if>
-		<if ad_name="Leaden Salute"><equip set="MagicalDark" /></if>
 		<if ad_name="Savage Blade|Expiacion"><equip set="WS" /></if>
+		<if ad_name="Jishnu's Radiance|Last Stand|Slug Shot|Blast Shot|Heavy Shot|Detonator|Coronach|Numbing Shot|Sidewinder|Blast Arrow|Arching Arrow|Empyreal Arrow|Namas Arrow|Refulgent Arrow|Apex Arrow"><equip set="RATT" /></if>
+		<if ad_name="Flaming Arrow|Wildfire|Hot Shot|Wildfire|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade|Earth Crusher|Tartarus Torpor"><equip set="Magical" /></if>
+		<if ad_name="Aeolian Edge|Red Lotus Blade|Burning Blade|Cyclone"><equip set="MagicalMelee" /></if>
+		<if ad_name="Sanguine Blade|Leaden Salute"><equip set="DarkATT" /></if>
+		<if ad_name="Uriel Blade|Seraph Blade|Shining Blade"><equip set="LightATTMelee" /></if>
+		<if ad_name="Evisceration"><equip set="Crit" /></if>
 		<if ad_name="Requiescat"><equip set="FTP" /></if>
-		<if ad_name="Evisceration"><equip set="FTP" /></if>
-		<if ad_name="Last Stand"><equip set="RATT" /></if>
+		</else>
+
 	</weaponskill>
+	
 	
 	<jobability>
 		<if ad_name="Earth Shot|Water Shot|Wind Shot|Fire Shot|Ice Shot|Thunder Shot|Light Shot|Dark Shot"><equip set="Quickdraw" /></if>

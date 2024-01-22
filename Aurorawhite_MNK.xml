@@ -33,18 +33,18 @@
 		</set>
 	
 		<set name="Crit">
-			<ammo>White Tathlum</ammo>
+			<ammo>Knobkierrie</ammo>
 			<head>Hes. Crown +3</head>
 			<body>Anch. Cyclas +3</body>
 			<hands>Anchor. Gloves +3</hands>
 			<legs>Hiza. Hizayoroi +2</legs>
 			<feet>Hes. Gaiters +3</feet>
-			<waist augment="S277974524951766472">Moonbow Belt +1</waist> <!-- CRIT -->
+			<waist augment="S6298341641220114664">Moonbow Belt +1</waist>
 			<neck>Fotia Gorget</neck>
 			<ear1>Ishvara Earring</ear1>
 			<ear2 augment="S30864">Balder Earring</ear2>  <!-- TA +16 -->
 			<ring1 augment="S4432903715027618759">Dark Ring</ring1>
-			<ring2>Dark Ring</ring2>
+			<ring2>Karieyh Ring</ring2> <!-- Save TP -->
 			<!-- <ring1>Niqmaddu Ring</ring1> -->
 			<!-- <ring2>Regal Ring</ring2> -->
 			<!-- <ear1>Telos Earring</ear1> -->
@@ -139,7 +139,7 @@
 		</set>
 	
 		<set name="Default">
-			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
+			<ammo augment="S7978882493864118577">Staunch Tathlum +1</ammo> <!-- Counter +40 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -168,14 +168,14 @@
 			<neck>Asperity Necklace</neck>
 			<waist augment="S12333616283242828716">Moonbow Belt +1</waist> <!-- STP SB -->
 			<ear1>Telos Earring</ear1>
-			<ear2 augment="S353610053140898233">Mache Earring +1</ear2> <!-- CRIT  -->
+			<ear2>Cessance Earring</ear2>
 			<ring1>Hetairoi Ring</ring1>
 			<ring2>Regal Ring</ring2>
 			<back>Laic Mantle</back>
 		</set>
 
 		<set name="WS">
-			<ammo>Crepuscular Pebble</ammo>
+			<ammo>Knobkierrie</ammo>
 			<head>Hes. Crown +3</head> <!-- TA +16 -->
 			<body>Hes. Cyclas +3</body> <!-- TA +16 -->
 			<hands>Anchor. Gloves +3</hands>  <!-- TA +16 -->
@@ -186,7 +186,7 @@
 			<ear1>Ishvara Earring</ear1> <!-- TA +16 -->
 			<ear2 augment="S30864">Balder Earring</ear2>  <!-- TA +16 -->
 			<ring1 augment="S4432903715027618759">Dark Ring</ring1>
-			<ring2>Dark Ring</ring2> <!-- TA +16 -->
+			<ring2>Karieyh Ring</ring2> <!-- Save TP -->
 			<back >Laic Mantle</back> <!-- TA +16 -->
 		</set>
 		
@@ -271,12 +271,8 @@
 			<ear2 augment="S353610053140898233">Mache Earring +1</ear2><!-- CRIT -->
 		</set>
 		
-		<set name="moonbowbelt">
-			<waist augment="S277974524951766472">Moonbow Belt +1</waist> <!-- CRIT -->
-		</set>
-		
-		<set name="defensivemoonbow">
-			<waist augment="S9710639732129722609">Moonbow Belt +1</waist><!-- MEVA -->
+		<set name="CritMoonBowBelt">
+			<waist augment="S6298341641220114664">Moonbow Belt +1</waist>
 		</set>
 		
 		<set name="stpmoonbow">
@@ -285,6 +281,9 @@
 		
 		<set name="balder16">
 			<ear1 augment="S30864">Balder Earring</ear1>
+		</set>
+		<set name="CounterStaunch">
+			<ammo augment="S7978882493864118577">Staunch Tathlum +1</ammo>
 		</set>
 	</sets>
 

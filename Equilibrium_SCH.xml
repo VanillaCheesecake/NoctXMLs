@@ -36,17 +36,13 @@
 			<ring2 augment="S190012252531924424">Ifrit Ring +1</ring2>
 			<back augment="S190012252531924424">Relucent Cape</back>
 		</set>
-	
 
-	
-
-		
 		<set name="WS" baseset="Main">
 
 		</set>
 		
 		<set name="Default">
-			<ammo>Pemphredo Tathlum</ammo>
+			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo> <!-- Refresh +80 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>

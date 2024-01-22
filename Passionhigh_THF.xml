@@ -91,7 +91,7 @@
 
 
 		<set name="Default">
-			<ammo>Cheruski Needle</ammo>
+			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
 		
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>

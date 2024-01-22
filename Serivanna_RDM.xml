@@ -253,7 +253,7 @@
 		</set>
 		
 		<set name="Enhance" baseset="Fastcast">
-			<ammo augment="S8452624615344019680">Sliced Sardine</ammo>
+			<ammo augment="S8452624615344019680">Staunch Tathlum +1</ammo> <!-- Enhancing Duration +40 -->
 			<head augment="S8452624615344019680">Welkin Crown</head>
 			<body augment="S8452624615344019680">Viti. Tabard +2</body>
 			<hands augment="S8452624615344019680">Atrophy Gloves +2</hands>
@@ -284,27 +284,27 @@
 		<neck>Dls. Torque +2</neck> <!-- Unaugable -->
 		<hands>Leth. Gantherots +1</hands> <!-- Occ Max -->
 		<body>Lethargy Sayon +1</body> <!-- Occ Max -->
-		<legs>Carmine Cuisses +1</legs>  <!-- Unaugable -->
+		<legs>Psycloth Lappas</legs>
 		<feet>Vitiation Boots +3</feet>  <!-- Unaugable -->
 		<ring2>Kishar Ring</ring2> <!-- Occ Max -->
-		<back augment="S190957159755184446">Sucellos's Cape</back> <!-- Occ Max -->
+		<back augment="S278919432175026494">Sucellos's Cape</back> <!-- Occ Max Macc -->
 		</set>
 	
 		<set name="Poison">
 			<main augment="S276385362803556435">Arendsi Fleuret</main>
 			<sub augment="S276385362803556435">Thanatos Baselard</sub>
-			<ammo augment="S6217489529050814476">Regal Gem</ammo>
+			<ammo>Regal Gem</ammo>
 			<head augment="S276385362803556435">Viti. Chapeau +2</head>
-			<body augment="S190957159755184446">Lethargy Sayon +1</body>
-			<hands augment="S190957159755184446">Leth. Gantherots +1</hands>
-			<legs augment="S12349119013193939204">Carmine Cuisses +1</legs>
+			<body>Lethargy Sayon +1</body>
+			<hands>Leth. Gantherots +1</hands>
+			<legs>Psycloth Lappas</legs>
 			<feet>Vitiation Boots +3</feet>
-			<neck augment="S12536341841635550400">Dls. Torque +2</neck>
+			<neck>Dls. Torque +2</neck>
 			<waist augment="S276385362803556435">Witch Sash</waist>
 			<ear1 augment="S276385362803556435">Neptune's Pearl</ear1>
 			<ear2 augment="S276385362803556435">Neptune's Pearl</ear2>
 			<ring1 augment="S276385362803556435">Stikini Ring +1</ring1>
-			<ring2 augment="S190957159755184446">Kishar Ring</ring2>
+			<ring2>Kishar Ring</ring2>
 			<back augment="S276385362803556435">Sucellos's Cape</back>
 		</set>
 		
@@ -361,10 +361,6 @@
 		<set name="enhstikini">
 			<ring1 augment="S364304684895068482">Stikini Ring +1</ring1>
 			<ring2 augment="S364304684895068482">Stikini Ring +1</ring2>
-		</set>
-	
-		<set name="EnhancingStaunch">
-			<ammo augment="S8041160469942618722">Staunch Tathlum +1</ammo> <!-- ENHANCING SKILL -->
 		</set>
 		</sets>
 

@@ -38,11 +38,7 @@
 			<ring2 augment="S190012252531924424">Ifrit Ring +1</ring2>
 			<back augment="S190012252531924424">Relucent Cape</back>
 		</set>
-	
 
-	
-
-	
 		<set name="Nuke">
 			<ammo>Pemphredo Tathlum</ammo>
 			
@@ -142,9 +138,6 @@
 			<back>Izdubar Mantle</back>
 			<waist>Eschan Stone</waist>	
 		</set>
-		
- 
-		
 		
 		<set name="Enspell">
 			<main augment="S8301439459622419328">Wind Knife</main>
@@ -809,12 +802,11 @@
 		<if ad_name="Hasso"><equip set="Hasso" /></if>
 		<if ad_name="Sengikori"><equip set="Sengikori" /></if>
 		<if ad_name="Warding Circle|Meditate"><equip set="Meditate" /></if>
-		<if ad_name="Jump"><equip set="WS"></if>
+		<if ad_name="Jump"><equip set="WS" /></if>
     </jobability>
 
 
 	<weaponskill>
 		<equip set="WS" />
-
 	</weaponskill>
 </ashitacast>
