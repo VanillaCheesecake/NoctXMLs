@@ -13,16 +13,17 @@
 	<command delay="1000">/exec Jobs/13-NIN</command>
 	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
 	<!-- <command delay="3000">/echo Changed to %p_job!< -->
-		<command>/bind F9 /th</command>
+	<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
+	<command>/blusets load int</command>
 	</init>
 	<sets>
-	
+
 		<set name="Movement" baseset="Default">
 			<feet>Danzo Sune-Ate</feet>
 			<ring1>Shneddick Ring</ring1>
 		</set>
-	
+
 		<set name="Nexus">
 			<back>Nexus Cape</back>
 		</set>
@@ -42,18 +43,22 @@
 		</set>
 	
 		<set name="Crit" baseset="Main">
-			<ammo>Cheruski Needle</ammo>
+			<ammo>Bullet</ammo>
 			<neck>Asperity Necklace</neck>
-			<waist>Engraved Belt</waist>
-			<ear1 augment="S353610053140898233">Mache Earring +1</ear1>
-			<ear2>Telos Earring</ear2>
-			<ring1>Regal Ring</ring1>
-			<ring2>Hetairoi Ring</ring2>
+			<waist augment="S6174968704004114377">Gerdr Belt +1</waist>
+			<ear1>Tati Earring +1</ear1>
+			<ear2>Tati Earring +1</ear2>
+			<body>Mochi. Chainmail +3</body>
+			<hands>Ryuo Tekko +1</hands>
+			<legs>Hiza. Hizayoroi +2</legs>
+			<ring1>Karieyh Ring</ring1>
+			<ring2>Ilabrat Ring</ring2>
 			<back>Laic Mantle</back>
 		</set>
-	
+
 		<!-- unique to nin -->
-		<set name="Utsusemi" baseset="FastCast">	
+		<set name="Utsusemi" baseset="FastCast">
+			<ammo>Platinum Bullet</ammo>
 			<feet>Hattori Kyahan +1</feet>
 			<hands>Mochizuki Tekko +3</hands>
 			<back>Andartia's Mantle</back>
@@ -61,6 +66,7 @@
 		</set>
 		
 		<set name="FastCast">
+			<ammo>Platinum Bullet</ammo>
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>
@@ -70,13 +76,14 @@
 			<ear1>Gwati Earring</ear1>	
 			<ear2>Belatz Pearl</ear2>
 			<neck>Voltsurge Torque</neck>
-			<waist>Chaac Belt</waist>
+			<waist>Tempus Fugit +1</waist>
 			<ring1>Gorney Ring</ring1>
 			<ring2>Veneficium Ring</ring2>
 			<back>Shaper's Shawl</back>
 		</set>
 		
 		<set name="Enfeeble">
+			<ammo>Platinum Bullet</ammo>
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>
@@ -103,53 +110,54 @@
 		<feet>Mochi. Kyahan +3</feet>
 		</set>
 		
+		<set name="HeroicsWS" baseset="WS">
+		<feet>Heidrek Boots</feet>
+		</set>
+		
+		<set name="HeroicsCrit" baseset="Crit">
+		<feet>Heidrek Boots</feet>
+		</set>
+		
+		<set name="HeroicsFTP" baseset="FTP">
+		<feet>Heidrek Boots</feet>
+		</set>
+		
+		<set name="HeroicsNuke" baseset="Nuke">
+		<feet>Heidrek Boots</feet>
+		</set>
+		
 		<set name="FTP" baseset ="Main">
+		<legs>Hiza. Hizayoroi +2</legs>
 		<waist>Fotia Belt</waist>
 		<neck>Fotia Gorget</neck>
 		<back>Laic Mantle</back>
-		<ear1>Cessance Earring</ear1>
-		<ear2 augment="S182109392119204240">Mache Earring +1</ear2>
-		<ring2>Regal Ring</ring2>
+		<hands>Mochizuki Tekko +2</hands>
+		<ear1>M. Slime Earring</ear1>
+		<ear2>Ishvara Earring</ear2>
+		<!-- <ear2 augment="S182109392119204240">Mache Earring +1</ear2> -->
+		<ring1>Dark Ring</ring1>
+		<ring2>Dark Ring</ring2>
 		<feet>Mochi. Kyahan +3</feet>
 		</set>
 		
-		<set name="Magical">
-			<ammo>Silver Arrow</ammo>
-			<head>Mochi. Hatsuburi +1</head>
-			<body>Gyve Doublet</body>
-			<hands>Mochizuki Tekko +3</hands>
-			<legs>Gyve Trousers</legs>
-			<feet>Hachiya Kyahan +3</feet>
-			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
-			<neck>Stoicheion Medal</neck>
-			<waist>Eschan Stone</waist>
-			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
-			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
-			<back>Izdubar Mantle</back>
-		</set>
-		
 		<set name="Nuke">
-			<ammo>Silver Arrow</ammo>
-			<head>Mochi. Hatsuburi +1</head>
+			<ammo>Platinum Bullet</ammo>
+			<head>Mochi. Hatsuburi +3</head>
 			<body>Gyve Doublet</body>
 			<hands>Mochizuki Tekko +3</hands>
 			<legs>Gyve Trousers</legs>
 			<feet>Hachiya Kyahan +3</feet>
-			<ear1>Belatz Pearl</ear1>
-			<ear2>Gwati Earring</ear2>
-			<neck>Stoicheion Medal</neck>
-			<waist>Eschan Stone</waist>
-			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
-			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
-			<back>Izdubar Mantle</back>
-			<feet>Hachiya Kyahan +3</feet>
+			<ear1>Moonshade Earring</ear1>
+			<ear2>Strophadic Earring</ear2>
+			<neck>Satlada Necklace</neck>
+			<waist>Skrymir Cord +1</waist>
+			<ring1 augment="S64004">Shiva Ring +1</ring1>
+			<ring2 augment="S64004">Shiva Ring +1</ring2>
+			<back>Toro Cape</back>
 		</set>
-		
- 
 		
 		<set name="Default">
-			<ammo>Antlion Arrow</ammo>
+			<ammo>Gold Bullet</ammo>
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -167,16 +175,16 @@
 		</set>
 		
 		<set name="Main">
-			<ammo>Antlion Arrow</ammo>
-			<ranged>Exalted Bow</ranged>
+			<ammo>Bullet</ammo>
+			<ranged>Donar Gun</ranged>
 			<head>Hachiya Hatsu. +3</head>
 			<body>Mochi. Chainmail +3</body>
-			<hands>Hachiya Tekko +3</hands>
+			<hands>Ryuo Tekko +1</hands>
 			<legs>Hachiya Hakama +3</legs>
 			<neck>Asperity Necklace</neck>
-			<waist>Engraved Belt</waist>
-			<ear1>Suppanomimi</ear1>
-			<ear2>Telos Earring</ear2>
+			<waist augment="S190012252531924424">Gerdr Belt +1</waist>
+			<ear1>Telos Earring</ear1>
+			<ear2>Balder Earring +1</ear2>
 			<ring1>Petrov Ring</ring1>
 			<ring2>Hetairoi Ring</ring2>
 			<back>Laic Mantle</back>
@@ -196,8 +204,8 @@
 		<set name="DarkNuke" baseset="Nuke">
 			<head>Pixie Hairpin +1</head>
 			<neck>Baetyl Pendant</neck>
-			<ring1>Shiva Ring +1</ring1>
-			<ring2>Shiva Ring +1</ring2>
+			<ring1 augment="S9732114896294722659">Shiva Ring +1</ring1>
+			<ring2 augment="S9732114896294722659">Shiva Ring +1</ring2>
 			<ear1>Friomisi Earring</ear1>
 			<ear2>Regal Earring</ear2>
 			<back>Izdubar Mantle</back>
@@ -234,7 +242,51 @@
 			<waist>Paewr Belt</waist>
 			<back>Solemnity Cape</back>
 		</set>
-
+		
+		<set name="critgerdr">
+			<waist augment="S353610053140898233">Gerdr Belt +1</waist>
+		</set>
+		<set name="critdmg">
+			<waist augment="S190012252531924424">Gerdr Belt +1</waist>
+		</set>
+		
+		
+		
+		<set name="CUL">
+			<main>Hocho</main>
+			<sub augment="S8301439459622419328">Kupo Shield</sub>
+			<range augment="S7978882493864118577">Exalted Bow +1</range>
+			<ammo augment="S7978882493864118577">Obsidian Arrow</ammo>
+			<head>Chef's Hat</head>
+			<body>Culinarian's Apron</body>
+			<hands augment="S190957159755184446">Volte Bracers</hands>
+			<legs augment="S190957159755184446">Volte Hose</legs>
+			<feet augment="S190957159755184446">Volte Boots</feet>
+			<neck>Culin. Torque</neck>
+			<waist augment="S9710639732129722609">Resolute Belt</waist>
+			<ear1 augment="S9710639732129722609">Hearty Earring</ear1>
+			<ear2 augment="S9710639732129722609">Sanare Earring</ear2>
+			<ring1 augment="S9710639732129722609">Shadow Ring</ring1>
+			<ring2 augment="S12333616283242828716">Defending Ring</ring2>
+			<back augment="S9710639732129722609">Shadow Mantle</back>
+		</set>
+		<set name="tabalder">
+			<ear2 augment="S22672">Balder Earring</ear2>
+		</set>
+		<set name="critgerdr">
+			<waist augment="S6174968704004114377">Gerdr Belt +1</waist>
+		</set>
+		<set name="critrits">
+			<ring1 augment="S277974524951766472">Ifrit Ring +1</ring1>
+		</set>
+		<set name="intshivas">
+			<ring1 augment="S64004">Shiva Ring +1</ring1>
+			<ring2 augment="S64004">Shiva Ring +1</ring2>
+		</set>
+		<set name="mabshivas">
+			<ring1 augment="S9732114896294722659">Shiva Ring +1</ring1>
+			<ring2 augment="S9732114896294722659">Shiva Ring +1</ring2>
+		</set>
 	</sets>
 
 	<variables>
@@ -250,7 +302,7 @@
 	
 <!-- handle gear commands -->
 		
-	<cmd input="/main">
+		<cmd input="/main">
 	<if advanced="$Main=0">
 	<setvar name="Main" value="1" />
 	<setvar name="TH" value="0" />
@@ -295,7 +347,7 @@
 	</else>
 	</cmd>
 
-	<cmd input="/autoth">
+		<cmd input="/autoth">
 	<if advanced="$AutoTH=1">
 	<setvar name="AutoTH" value="0" />
 	<command>/echo Will no longer automatically equip TH set upon engaging in melee range for 3 seconds. Toggle on with /autoth.</command>
@@ -635,7 +687,7 @@
 		</equip>
 
         <command delay="150">/item "Hallowed Water" &lt;me&gt;</command>
-		</if>
+    </if>
 	   
 	<if buffactive="31"> <!-- Plague -->
 		<command delay="150">/item "Remedy Ointment" &lt;me&gt;</command>
@@ -644,6 +696,7 @@
     <if buffactive="11|12|21|128|129|130|131|132|133|134|135|136|137|138|139|140|141|142|144|145|146|147|148|149|167|168|174|175|189|404|557|558|559|560|561|562|563|564|567"> <!-- Bind|Weight|Addle|Burn|Frost|Choke|Rasp|Shock|Drown|Dia|Bio|STR/DEX/VIT/AGI/INT/MND/CHR Down|Max HP/MP/Accuracy/Attack/Evasion/Defence Down|Magic Defence Down|Magic Accuracy Down|Magic Attack Down|Max TP Down|Magic Evasion Down|GEO Versions of Stat Downs -->
 		<command delay="150">/item "Panacea" &lt;me&gt;</command>
     </if>
+	
 	</cmd>
 	
 	<cmd input="//panacea">
@@ -786,6 +839,10 @@
 	
 	<!-- End of Auto WS use. -->
 	
+	<!-- <if e_area="Escha - Zi'Tah"> -->
+	<!-- <command delay="4000">/echo Heroics zone active!</command> -->
+	<!-- </if> -->
+	
 	</idlegear>
 
 <premagic>
@@ -803,7 +860,6 @@
 		<registerbuff id="37" active="false" />	
 		</if>
 		</if>
-		
 		<!-- enspells -->
 		<if ad_name="Enfire*|Enblizzard*|Enaero*|Enstone*|Enthunder*|Enwater*|Endark*|Enlight*"><equip set="Enspell" />
 		<gearlock length="1" />
@@ -840,7 +896,7 @@
 		
 		<!-- enfeebling ninjtsu -->
 		<if ad_name="Kurayami*|Hojo*|Dokumori*|Jubaku*|Aisha*|Yurin*"><equip set="Enfeeble" /></if>
-		
+
 		<!-- special cases -->
 		<if ad_name="*helix"><equip set="Helix" /><gearlock length="1" /></if>
 
@@ -856,10 +912,22 @@
 </midmagic>
 
 	<weaponskill>
+	
+		<if advanced="$Heroics=1"> <!-- Checks to see if the player is in a heroics zone or not -->
+		<equip set="HeroicsWS" /> <!-- Runs when player isn't in a heroics zone -->
+		<if ad_name="Blade: Jin|Blade: Shun|Blade: Ku"><equip set="HeroicsFTP" /></if>
+		<if ad_name="Aeolian Edge|Blade: Yu|Blade: Ei|Blade: To|Blade: Teki|Uriel Blade|Red Lotus Blade|Burning Blade|Shining Blade|Seraph Blade">
+		<equip set="HeroicsNuke" /></if>
+		<if ad_name="Blade: Hi|Blade: Rin"><equip set="HeroicsCrit" /></if>
+		</if>
+		
+		<else>  <!-- Runs when player isn't in a heroics zone -->
 		<equip set="WS" />
 		<if ad_name="Blade: Jin|Blade: Shun|Blade: Ku"><equip set="FTP" /></if>
-		<if ad_name="Uriel Blade|Red Lotus Blade|Burning Blade|Shining Blade|Seraph Blade"><equip set="Magical" /></if>
-		<if ad_name="Aeolian Edge|Blade: Yu|Blade: Ei|Blade: To|BladE: Teki"><equip set="Magical" /></if>
+		<if ad_name="Aeolian Edge|Blade: Yu|Blade: Ei|Blade: To|Blade: Teki|Uriel Blade|Red Lotus Blade|Burning Blade|Shining Blade|Seraph Blade">
+		<equip set="Nuke" /></if>
 		<if ad_name="Blade: Hi|Blade: Rin"><equip set="Crit" /></if>
+		</else>
+		
 	</weaponskill>
 </ashitacast>

@@ -43,7 +43,7 @@
 		</set>
 	
 		<set name="Crit" baseset="Main">
-			<ammo>Cheruski Needle</ammo>
+			<ammo>Bullet</ammo>
 			<neck>Asperity Necklace</neck>
 			<waist augment="S6174968704004114377">Gerdr Belt +1</waist>
 			<ear1>Tati Earring +1</ear1>
@@ -57,7 +57,8 @@
 		</set>
 
 		<!-- unique to nin -->
-		<set name="Utsusemi" baseset="FastCast">	
+		<set name="Utsusemi" baseset="FastCast">
+			<ammo>Platinum Bullet</ammo>
 			<feet>Hattori Kyahan +1</feet>
 			<hands>Mochizuki Tekko +3</hands>
 			<back>Andartia's Mantle</back>
@@ -65,6 +66,7 @@
 		</set>
 		
 		<set name="FastCast">
+			<ammo>Platinum Bullet</ammo>
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>
@@ -74,13 +76,14 @@
 			<ear1>Gwati Earring</ear1>	
 			<ear2>Belatz Pearl</ear2>
 			<neck>Voltsurge Torque</neck>
-			<waist>Chaac Belt</waist>
+			<waist>Tempus Fugit +1</waist>
 			<ring1>Gorney Ring</ring1>
 			<ring2>Veneficium Ring</ring2>
 			<back>Shaper's Shawl</back>
 		</set>
 		
 		<set name="Enfeeble">
+			<ammo>Platinum Bullet</ammo>
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>
@@ -152,8 +155,6 @@
 			<ring2 augment="S64004">Shiva Ring +1</ring2>
 			<back>Toro Cape</back>
 		</set>
-		
- 
 		
 		<set name="Default">
 			<ammo>Gold Bullet</ammo>
