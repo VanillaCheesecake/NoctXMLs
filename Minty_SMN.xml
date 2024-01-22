@@ -1,0 +1,980 @@
+<ashitacast>
+	<settings> <!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>falsae</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<init>
+	<!-- <if p_mainjob="SMN"><setvar name="macrobook" value="15" /><setvar name="macropage" value="1" /></if> -->
+		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
+	<!-- <command delay="2000">/macro book $macrobook< -->
+	<!-- <command delay="2000">/macro set $macropage< -->
+	<command delay="1000">/exec Jobs/15-SMN</command>
+	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
+	<!-- <command delay="3000">/echo Changed to %p_job!< -->
+		<command>/bind F9 /th</command>
+	<command>/bind F10 /main</command>
+	</init>
+	<sets>
+	
+		<set name="Nexus">
+			<back>Nexus Cape</back>
+		</set>
+		
+		<set name="Movement" baseset="Default">
+			<feet>Herald's Gaiters</feet>
+			<ring1>Shneddick Ring</ring1>
+		</set>
+		
+		<set name="BREAK POINT">
+		<!-- there's nothing in here, it's purely for making batch processes easier by giving a reference point! -->
+		</set>
+		
+		<set name="Heavy" baseset="Main">
+			<neck augment="S190012252531924424">Ire Torque +1</neck>
+			<waist augment="S190012252531924424">Grunfeld Rope</waist>
+			<ear1 augment="S190012252531924424">Tati Earring +1</ear1>
+			<ear2 augment="S190012252531924424">Tati Earring +1</ear2>
+			<ring1 augment="S190012252531924424">Ifrit Ring +1</ring1>
+			<ring2 augment="S190012252531924424">Ifrit Ring +1</ring2>
+			<back augment="S190012252531924424">Relucent Cape</back>
+		</set>
+	
+
+	
+		<set name="Default">
+			<ammo>Sancus Sachet +1</ammo>
+			
+			<head>Volte Cap</head>
+			<body>Volte Jupon</body>
+			<hands>Volte Bracers</hands>
+			<legs>Volte Hose</legs>
+			<feet>Volte Boots</feet>
+			
+			<neck>Warder's Charm +1</neck>
+			<waist>Resolute Belt</waist>
+			<ear1>Hearty Earring</ear1>
+			<ear2>Sanare Earring</ear2>
+			<ring1>Shadow Ring</ring1>
+			<ring2>Vocane Ring</ring2>
+			<back>Shadow Mantle</back>
+		</set>
+	
+		<set name="Main">
+			<!-- <main>Nirvana</main> -->
+			<sub>Elan Strap +1</sub>
+			<ammo>Sancus Sachet +1</ammo>
+			<head>Convoker's Horn +3</head>
+			<body>Con. Doublet +3</body>
+			<hands>Convo. Bracers +3</hands>
+			<legs>Convo. Spats +3</legs>
+			<feet>Convo. Pigaches +3</feet>
+			<neck>Caller's Pendant</neck>
+			<waist>Regal Belt</waist>
+			<ear1>Esper Earring</ear1>
+			<ear2>Andoaa Earring</ear2>
+			<ring1>Varar Ring</ring1>
+			<ring2>Varar Ring</ring2>
+			<back>Campestres's Cape</back>
+		</set>
+		
+		<set name="FastCast">
+			<head>Volte Cap</head>
+			<body>Volte Jupon</body>
+			<hands>Volte Bracers</hands>
+			<legs>Volte Hose</legs>
+			<feet>Volte Boots</feet>
+			
+			<ear1>Gwati Earring</ear1>	
+			<ear2>Belatz Pearl</ear2>
+			<neck>Voltsurge Torque</neck>
+			<waist>Chaac Belt</waist>
+			<ring1>Gorney Ring</ring1>
+			<ring2>Veneficium Ring</ring2>
+			<back>Shaper's Shawl</back>
+		</set>
+		
+		<set name="WS" baseset="Main">
+
+		</set>
+		<set name="BPDelay-">
+			<hands>Glyphic Bracers +1</hands>
+			<feet>Glyph. Pigaches +1</feet>
+			<body>Glyphic Doublet +3</body>
+			<legs>Glyphic Spats +1</legs>
+			<head>Con. Horn +1</head>
+			<neck>Caller's Pendant</neck>
+			<waist>Regal Belt</waist>
+			<ear1>Esper Earring</ear1>
+			<ear2>Andoaa Earring</ear2>
+			<ring1>Varar Ring</ring1>
+			<ring2>Varar Ring</ring2>
+			<back>Campestres's Cape</back>
+		</set>
+
+		<set name="TH" baseset="Default" lock="true">
+			<head>Volte Cap</head>
+			<body>Volte Jupon</body>
+			<hands>Volte Bracers</hands>
+			<legs>Volte Hose</legs>
+			<feet>Volte Boots</feet>
+			<waist>Chaac Belt</waist>
+			<ring1>Gorney Ring</ring1>
+		</set>
+		
+		<set name="DarkNuke" baseset="Nuke">
+			<head>Pixie Hairpin +1</head>
+			<neck>Baetyl Pendant</neck>
+			<ring1>Shiva Ring +1</ring1>
+			<ring2>Shiva Ring +1</ring2>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Regal Earring</ear2>
+			<back>Izdubar Mantle</back>
+			<waist>Eschan Stone</waist>	
+		</set>
+		
+ 
+		
+		
+		<set name="Nuke">
+			<head>Volte Beret</head>
+			<body>Gyve Doublet</body>
+			<hands>Volte Gloves</hands>
+			<legs>Gyve Trousers</legs>
+			<feet>Volte Gaiters</feet>
+			<neck>Nefarious Collar</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Choleric Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
+			<ring2>Resonance Ring</ring2>
+			<back>Izdubar Mantle</back>
+		</set>
+		
+ 
+		
+		<set name="Helix">
+			<head>Volte Beret</head>
+			<body>Gyve Doublet</body>
+			<hands>Volte Gloves</hands>
+			<legs>Gyve Trousers</legs>
+			<feet>Volte Gaiters</feet>
+			<neck>Nefarious Collar</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Choleric Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
+			<ring2>Resonance Ring</ring2>
+			<back>Izdubar Mantle</back>
+		</set>
+		
+		
+		<set name="Enspell">
+			<main augment="S8301439459622419328">Wind Knife</main>
+			<sub>Kupo Shield</sub>
+			<range>Yew Fishing Rod</range>
+			<ammo>Peeled Crayfish</ammo>
+			<head>Scarlet Ribbon</head>
+			<body>Field Tunica</body>
+			<hands>Field Gloves</hands>
+			<legs>Field Hose</legs>
+			<feet>Field Boots</feet>
+			<neck>Goldsm. Torque</neck>
+			<waist>Friar's Rope</waist>
+			<ear1>Trq. Earring +1</ear1>
+			<ear2>Stm. Earring +1</ear2>
+			<ring1>Safeguard Ring</ring1>
+			<ring2>San d'Orian Ring</ring2>
+			<back>Wizard's Mantle</back>
+		</set>
+		
+		<set name="Summon">
+		<back>Campestres's Cape</back>
+		</set>
+		
+		<set name="Cure" baseset="FastCast"> <!-- Do not use this set if WHM -->
+			<neck>Phalaina Locket</neck>
+			<ear1>Mendi. Earring</ear1>
+			<ear2 >Corybant Pearl</ear2>
+			<ring1>Janniston Ring</ring1>
+			<ring2>Kunaji Ring</ring2>
+			<waist>Paewr Belt</waist>
+			<back>Solemnity Cape</back>
+		</set>
+		
+	</sets>
+
+	<variables>
+	<var name="TH">0</var> <!--Initialize-->
+	<var name="Main">0</var> <!--Initialize-->
+	<var name="Itemuse">0</var> <!--Initialize-->
+	<var name="Autows">0</var> <!--Initialize-->
+	<var name="ws">None</var> <!--Initialize-->
+	<var name="Heroics">0</var> <!--Initialize-->
+	</variables>
+	
+	<inputcommands>	
+	
+	<!-- handle gear commands -->
+		
+		<cmd input="/main">
+	<if advanced="$Main=0">
+	<setvar name="Main" value="1" />
+	<setvar name="TH" value="0" />
+	<equip set="Main" />
+	<command>/echo Equipped Main set.</command>
+	</if>
+	
+	<else>
+	<setvar name="Main" value="0" />
+	<command>/echo Removed Main set.</command>
+	<equip set="Default" />
+	</else>
+	</cmd>
+	
+	<cmd input="/th">
+	<if advanced="$TH=0">
+	<setvar name="TH" value="1" />
+	<setvar name="Main" value="0" />
+	<equip set="TH" />
+	<command>/echo Equipped TH set.</command>
+	</if>
+	
+	<else>
+	<setvar name="TH" value="0" />
+	<command>/echo Removed TH set.</command>
+	<equip set="Default" />
+	</else>
+	</cmd>
+	
+	<cmd input="//th">
+	<if advanced="$TH=0">
+	<setvar name="TH" value="1" />
+	<setvar name="Main" value="0" />
+	<equip set="TH" />
+	<command>/echo Equipped TH set.</command>
+	</if>
+	
+	<else>
+	<setvar name="TH" value="0" />
+	<command>/echo Removed TH set.</command>
+	<equip set="Default" />
+	</else>
+	</cmd>
+
+		<cmd input="/autoth">
+	<if advanced="$AutoTH=1">
+	<setvar name="AutoTH" value="0" />
+	<command>/echo Will no longer automatically equip TH set upon engaging in melee range for 3 seconds. Toggle on with /autoth.</command>
+	</if>
+	
+	<else>
+	<setvar name="AutoTH" value="1" />
+	<command>/echo Will automatically equip TH set upon first engaging in melee range for 3 seconds. Toggle off with /autoth.</command>
+	</else>
+	</cmd>
+
+	<!-- end of handle gear commands -->
+	
+	<cmd input="/cancel wallga">
+	<command>/cancel 37</command>
+	</cmd>
+
+	<!--   BLU SPELLS -->
+	
+	<cmd input="//ss">
+	<command>/exec Macros/BLU/Diamondhidewait</command>
+	</cmd>
+	
+	<cmd input="/ss">
+	<command>/exec Macros/BLU/Diamondhidewait</command>
+	</cmd>
+	
+	<cmd input="//exu">
+	<command>/exec Macros/BLU/Exuviation.txt</command>
+	</cmd>
+
+	<cmd input="//reactor">
+	<command>/exec Macros/BLU/Reactor.txt</command>
+	</cmd>
+	
+	<cmd input="//counter">
+	<command>/exec Macros/BLU/Counterstance.txt</command>
+	</cmd>
+	
+	<cmd input="//breath">
+	<command>/exec Macros/BLU/Badbreath.txt</command>
+	</cmd>
+	
+	<cmd input="//reaving">
+	<command>/exec Macros/BLU/Reaving.txt</command>
+	</cmd>
+	
+	<cmd input="//tickle">
+	<command>/exec Macros/BLU/Tickle.txt</command>
+	</cmd>
+	
+	<cmd input="//mortal">
+	<command>/exec Macros/BLU/Mortal.txt</command>
+	</cmd>
+	
+	<cmd input="//coc">
+	<command>/exec Macros/BLU/cocoon</command>
+	</cmd>
+	
+	<cmd input="//nat">
+	<command>/exec Macros/BLU/natmed</command>
+	</cmd>
+
+	<cmd input="//jetta">
+	<command>/exec Macros/BLU/jettatura</command>
+	</cmd>
+	
+	<cmd input="//saline">
+	<command>/exec Macros/BLU/saline</command>
+	</cmd>
+	
+	<cmd input="//wind">
+	<command>/exec Macros/BLU/erase</command>
+	</cmd>
+	
+	<cmd input="//dart">
+	<command>/exec Macros/BLU/Dart</command>
+	</cmd>
+	
+	<cmd input="//trunk">
+	<command>/exec Macros/BLU/Trunk</command>
+	</cmd>
+	
+	<cmd input="//flutter">
+	<command>/exec Macros/BLU/Flutter</command>
+	</cmd>
+	
+	<cmd input="//tusk">
+	<command>/exec Macros/BLU/tusk</command>
+	</cmd>
+	
+	<cmd input="//frypan">
+	<command>/exec Macros/BLU/frypan</command>
+	</cmd>
+	
+	<cmd input="//pan">
+	<command>/exec Macros/BLU/frypan</command>
+	</cmd>
+	
+	<cmd input="//memento">
+	<command>/exec Macros/BLU/memento</command>
+	</cmd>
+	
+	<cmd input="//mori">
+	<command>/exec Macros/BLU/memento</command>
+	</cmd>
+	
+	<cmd input="//tomb">
+	<command>/exec Macros/BLU/entomb</command>
+	</cmd>
+	
+	<cmd input="//enbalm">
+	<command>/exec Macros/BLU/embalming</command>
+	</cmd>
+	
+	<cmd input="//embalm">
+	<command>/exec Macros/BLU/embalming</command>
+	</cmd>
+	
+	<cmd input="//charge">
+	<command>/exec Macros/BLU/charge</command>
+	</cmd>
+	
+	<cmd input="//hammer">
+	<command>/exec Macros/BLU/hammer</command>
+	</cmd>
+	
+	<cmd input="//occult">
+	<command>/exec Macros/BLU/occultation</command>
+	</cmd>
+	
+	<cmd input="//osmosis">
+	<command>/exec Macros/BLU/osmosis</command>
+	</cmd>
+	
+	<cmd input="//osmo">
+	<command>/exec Macros/BLU/osmosis</command>
+	</cmd>
+	
+	<cmd input="//slide">
+	<command>/exec Macros/BLU/saurian</command>
+	</cmd>
+	
+	<cmd input="//saurian">
+	<command>/exec Macros/BLU/saurian</command>
+	</cmd>
+	
+	<cmd input="//tenebral">
+	<command>/exec Macros/BLU/tenebral</command>
+	</cmd>
+	
+	<cmd input="//crush">
+	<command>/exec Macros/BLU/tenebral</command>
+	</cmd>
+	
+	<cmd input="//storm">
+	<command>/exec Macros/BLU/storm</command>
+	</cmd>
+	
+	<cmd input="//silent">
+	<command>/exec Macros/BLU/storm</command>
+	</cmd>
+	
+	<cmd input="//song">
+	<command>/exec Macros/BLU/sheepsong</command>
+	</cmd>
+	
+	<cmd input="//sheep">
+	<command>/exec Macros/BLU/sheepsong</command>
+	</cmd>
+	
+	<cmd input="//dream">
+	<command>/exec Macros/BLU/dreamflower</command>
+	</cmd>
+	
+	<cmd input="//flower">
+	<command>/exec Macros/BLU/dreamflower</command>
+	</cmd>
+
+	<cmd input="//pinecone">
+	<command>/exec Macros/BLU/pinecone</command>
+	</cmd>
+	
+	<cmd input="//pineconebomb">
+	<command>/exec Macros/BLU/bomb</command>
+	</cmd>
+	
+	<cmd input="//eye">
+	<command>/exec Macros/BLU/silence</command>
+	</cmd>
+	
+	<cmd input="//geist">
+	<command>/exec Macros/BLU/geist</command>
+	</cmd>
+	
+	<cmd input="//sub">
+	<command>/exec Macros/BLU/subduction</command>
+	</cmd>
+	
+	<cmd input="//thsub">
+	<command>/exec Macros/BLU/THsubduction</command>
+	</cmd>
+	
+	<cmd input="//thspec">
+	<command>/exec Macros/BLU/THspectral</command>
+	</cmd>
+	
+	<cmd input="//nukesub">
+	<command>/exec Macros/BLU/subduction</command>
+	</cmd>
+	
+	<cmd input="//nukepalling">
+	<command>/exec Macros/BLU/nukepalling</command>
+	</cmd>
+	
+	<cmd input="//nuketenebral">
+	<command>/exec Macros/BLU/nuketenebral</command>
+	</cmd>
+	
+	<cmd input="//nukeblinding">
+	<command>/exec Macros/BLU/nukeblinding</command>
+	</cmd>
+
+	<cmd input="//nuketempest">
+	<command>/exec Macros/BLU/nuketempest</command>
+	</cmd>
+	
+	<cmd input="//nukespectral">
+	<command>/ma Spectral Floe</command>
+	</cmd>
+	
+	<cmd input="//nukestorm">
+	<command>/exec Macros/BLU/nukestorm</command>
+	</cmd>
+	
+	<cmd input="//nukescouring">
+	<command>/exec Macros/BLU/nukescouring</command>
+	</cmd>
+	
+	<cmd input="//nukeenbalm">
+	<command>/exec Macros/BLU/nukeenbalm</command>
+	</cmd>
+	
+	<cmd input="//nukeembalm">
+	<command>/exec Macros/BLU/nukeenbalm</command>
+	</cmd>
+
+	<cmd input="//nukeentomb">
+	<command>/exec Macros/BLU/nukeentomb</command>
+	</cmd>
+	
+	<cmd input="//nuketomb">
+	<command>/exec Macros/BLU/nukeentomb</command>
+	</cmd>
+	
+	<cmd input="//nukesearing">
+	<command>/exec Macros/BLU/nukesearing</command>
+	</cmd>
+	
+	<cmd input="//nukeanvil">
+	<command>/exec Macros/BLU/nukeanvil</command>
+	</cmd>
+	
+	<cmd input="//orb">
+	<command>/exec Macros/BLU/orb</command>
+	</cmd>
+	
+	<cmd input="//heavy">
+	<command>/exec Macros/BLU/heavy</command>
+	</cmd>
+	
+	<cmd input="//acrid">
+	<command>/exec Macros/BLU/acrid</command>
+	</cmd>
+	
+	<cmd input="//vapor">
+	<command>/exec Macros/BLU/vapor</command>
+	</cmd>
+
+	<cmd input="//vapour">
+	<command>/exec Macros/BLU/vapor</command>
+	</cmd>
+	
+	<cmd input="//grudge">
+	<command>/exec Macros/BLU/grudge</command>
+	</cmd>
+	
+	<cmd input="//barrier">
+	<command>/exec Macros/BLU/magicbarrier</command>
+	</cmd>
+	
+	<cmd input="//thermal">
+	<command>/exec Macros/BLU/thermal</command>
+	</cmd>
+
+	<cmd input="//atra">
+	<command>/exec Macros/BLU/atra</command>
+	</cmd>
+	
+	<cmd input="//metallic">
+	<command>/exec Macros/BLU/metallic</command>
+	</cmd>
+
+	
+	<!--  END OF BLU SPELLS -->
+	
+	<cmd input="/itemuse">
+	<if advanced="$Itemuse=0"> 
+	<setvar name="Itemuse" value="1" />
+	<command>/echo Item use is now ON.</command>
+	</if>
+	
+	<else>
+	<setvar name="Itemuse" value="0" />
+	<command>/echo Item use is now OFF.</command>
+	</else>
+	</cmd>
+	
+	
+	
+	<!-- ITEM USAGE COMMANDS -->
+	
+	<cmd input="//i"> <!-- Will use items in order of sequential priority -->
+		<if buffactive="3|4|5|8|566"> <!-- Poison|Paralyze|Blind|Disease -->
+		<command>/item "Remedy" &lt;me&gt;</command>
+    </if>
+	 
+	 <if buffactive="6"> <!-- Silence -->
+		<command delay="150">/item "Echo Drops" &lt;me&gt;</command>
+	</if>
+	
+     <if buffactive="9|15|20|30"> <!--Curse I|Doom|Curse II|Bane -->
+		<equip lock="true">
+			<ring1>Blenmot's Ring +1</ring1>
+			<ring2>Blenmot's Ring +1</ring2>
+		</equip>
+
+        <command delay="150">/item "Hallowed Water" &lt;me&gt;</command>
+    </if>
+	   
+	<if buffactive="31"> <!-- Plague -->
+		<command delay="150">/item "Remedy Ointment" &lt;me&gt;</command>
+	</if>
+	   
+    <if buffactive="11|12|21|128|129|130|131|132|133|134|135|136|137|138|139|140|141|142|144|145|146|147|148|149|167|168|174|175|189|404|557|558|559|560|561|562|563|564|567"> <!-- Bind|Weight|Addle|Burn|Frost|Choke|Rasp|Shock|Drown|Dia|Bio|STR/DEX/VIT/AGI/INT/MND/CHR Down|Max HP/MP/Accuracy/Attack/Evasion/Defence Down|Magic Defence Down|Magic Accuracy Down|Magic Attack Down|Max TP Down|Magic Evasion Down|GEO Versions of Stat Downs -->
+		<command delay="150">/item "Panacea" &lt;me&gt;</command>
+    </if>
+	</cmd>
+	
+	<cmd input="//panacea">
+	<command>/i panacea</command>
+	</cmd>
+	
+	<cmd input="//pana">
+	<command>/i panacea</command>
+	</cmd>
+	
+	<cmd input="//echo">
+	<command>/i "echo drops"</command>
+	</cmd>
+	
+	<cmd input="//drops">
+	<command>/i "echo drops"</command>
+	</cmd>
+	
+	<cmd input="//herbs">
+	<command>/i "echo drops"</command>
+	</cmd>
+	
+	<cmd input="//waters">
+	<command>/i "hallowed water"</command>
+	</cmd>
+	
+	<cmd input="//hallowed">
+	<command>/i "hallowed water"</command>
+	</cmd>
+	
+	<!-- END OF ITEM USAGE COMMANDS -->
+	
+	</inputcommands>
+
+	<idlegear>
+	
+	<if e_area="Escha*|Reisenjima|Reisenjima Sanctorium|Abdhaljs Isle-Purgonorgo"> <!-- Heroics Zone Check -->
+	<setvar name="Heroics" value="1" />
+	</if>
+	
+	<else>
+	<setvar name="Heroics" value="0" />
+	</else>
+	
+<if p_status="engaged"><equip set="Default" /></if> <!--Forces idle/DT gear upon engagement-->
+		
+		<equip set="Default" /> <!--Idle defensive gear when standing still-->
+		
+		
+		<if p_ismoving="True"> <!--Checks for movement since last outgoing 0x15(position update packet)-->
+		
+		<if p_status="engaged"> <!--Checks for movement while engaged, if true, keep the idle/DT feet on for obvious reasons-->
+			<if advanced="$AutoTH=1">
+				<if advanced="$FirstTH=0">
+				
+					<if t_distance="<4.5">
+					<equip set="TH" /><gearlock length="3" />
+					<setvar name="FirstTH" value="1" />
+					</if>
+				</if>
+			</if>
+			<else><equip set="Default" /></else>
+		</if>
+			
+		<else><equip set="Movement" /></else> <!--If not in battle, equip movement feet-->
+		</if>
+	
+	<if p_status="idle"><setvar name="FirstTH" value="0" /></if>
+			
+		
+		<if advanced="$TH=1"><equip set="TH" /></if> <!--Should always be at the bottom of equips for compatibility -->
+		<if advanced="$Main=1"><equip set="Main" /></if><!--Should always be at the bottom of equips for compatibility -->
+		
+	<!-- ITEM USAGE SYNTAX -->
+				
+	<!-- Item use wrapper -->			
+	<if advanced="$Itemuse=1">
+	
+	<if buffactive="3|4|5|8|566"> <!-- Poison|Paralyze|Blind|Disease -->
+		<command delay="150">/item "Remedy" &lt;me&gt;</command>
+    </if>
+	 
+	 <if buffactive="6"> <!-- Silence -->
+		<command delay="150">/item "Echo Drops" &lt;me&gt;</command>
+	</if>
+	
+     <if buffactive="9|15|20|30"> <!--Curse I|Doom|Curse II|Bane -->
+		<equip lock="true">
+			<ring1>Blenmot's Ring +1</ring1>
+			<ring2>Blenmot's Ring +1</ring2>
+		</equip>
+
+        <command delay="150">/item "Hallowed Water" &lt;me&gt;</command>
+    </if>
+	   
+	<if buffactive="31"> <!-- Plague -->
+		<command delay="150">/item "Remedy Ointment" &lt;me&gt;</command>
+	</if>
+	   
+    <if buffactive="11|12|21|128|129|130|131|132|133|134|135|136|137|138|139|140|141|142|144|145|146|147|148|149|167|168|174|175|189|404|557|558|559|560|561|562|563|564|567"> <!-- Bind|Weight|Addle|Burn|Frost|Choke|Rasp|Shock|Drown|Dia|Bio|STR/DEX/VIT/AGI/INT/MND/CHR Down|Max HP/MP/Accuracy/Attack/Evasion/Defence Down|Magic Defence Down|Magic Accuracy Down|Magic Attack Down|Max TP Down|Magic Evasion Down|GEO Versions of Stat Downs -->
+		<command delay="150">/item "Panacea" &lt;me&gt;</command>
+    </if>
+	
+	</if>
+		
+	<!-- Force Run -->
+	
+	<!-- Hallowed Water -->		
+	
+     <if buffactive="9|15|20|30"> <!--Curse I|Doom|Curse II|Bane -->
+		<equip lock="true">
+			<ring1>Blenmot's Ring +1</ring1>
+			<ring2>Blenmot's Ring +1</ring2>
+		</equip>
+
+        <command delay="150">/item "Hallowed Water" &lt;me&gt;</command>
+    </if>
+	
+	<!-- Echo Drops -->
+	
+	<if buffactive="6"> <!-- Silence -->
+		<registerbuff id="6" active="false" />	
+		<command delay="200">/item "Echo Drops" &lt;me&gt;</command>
+	</if>
+	
+	<!-- Do not touch this. Handles item use. -->
+	<!-- END OF ITEM USAGE SYNTAX -->
+
+	<!-- Auto WS use. -->
+		
+	<if advanced="$Autows=1">
+		<if p_status="engaged">
+			<if p_tp=">999">
+				<if t_distance="<4.5">
+			<command>/ws "$ws" &lt;t&gt;</command>
+			</if>
+			</if>
+		</if>
+	</if>
+	
+	<!-- End of Auto WS use. -->
+	
+	</idlegear>
+
+<premagic>
+	<equip set="FastCast" />
+	</premagic>
+
+<midmagic>
+
+		<!-- stoneskin check -->
+		<if ad_name="Stoneskin|Metallic Body|Diamondhide">
+		<if buffactive="Stoneskin">
+		<registerbuff id="37" active="true" />	
+		<command>/cancel 37</command>
+		<registerbuff id="37" active="false" />	
+		</if>
+		</if>
+
+		<!-- enspells -->
+		<if ad_name="Enfire*|Enblizzard*|Enaero*|Enstone*|Enthunder*|Enwater*|Endark*|Enlight*"><equip set="Enspell" />
+		<gearlock length="1" />
+		</if>
+
+
+		
+		<!-- Physical BLU spell check -->
+		<if ad_name="Heavy Strike"><equip set="Heavy" />
+		</if>
+
+
+		<!-- elemental magic -->
+		<if ad_name="Stone|Stone II|Stone III|Stone IV|Stone V|Stone VI|Stonega|Stonega II|Stonega III|Stoneja|Wat*|Aer*|Fir*|Bliz*|Thun*|Quake*|Flood*|Tornado*|Flare*|Freeze*|Burst*|Comet|Meteor|*Spikes">
+		<equip set="Nuke" />  <!-- In case of mages, change this set from Nuke to Main -->
+		<gearlock length="1" />
+		</if>
+		
+		<!-- magical blue magic -->
+		<if ad_name="Silent Storm|Tem. Upheaval|Vapor Spray|Regurgitation|Searing Tempest|Palling Salvo|Blinding Fulgor|Scouring Spate|Entomb|Embalming Earth|Anvil Lightning|Magic Hammer|Spectral Floe|Subduction|Thermal Pulse|Atra. Libations">
+		<equip set="Nuke" />  <!-- In case of mages, change this set from Nuke to Main -->
+		</if>
+		
+		<if ad_name="Dark Orb|Palling Salvo|Evryone. Grudge|Comet">
+		<equip set="DarkNuke" />  <!-- In case of mages, change this set from Nuke to Main -->
+		</if>
+		
+		<!-- elemental ninjtsu -->
+		<if ad_name="Doton*|Suiton*|Huton*|Katon*|Hyoton*|Raiton*"><equip set="Nuke" /><gearlock length="1" /></if>
+		
+		<!-- utsusemi -->
+		<if ad_name="Utsusemi*"><equip set="Utsusemi" /></if>
+
+
+		<!-- special cases -->
+		<if ad_name="*helix"><equip set="Helix" /><gearlock length="1" /></if>
+
+		<if ad_name="Cure*|Cura*|White Wind|Restoral|Plenilune Embrace|Exuviation|Magic Fruit|Pollen|Wild Carrot|Healing Breeze"><equip set="Cure" /></if>
+
+		
+				<!-- skill sets -->
+		<if ad_name="Stoneskin|Diamondhide|Metallic Body|Protect*|Shell*|Bar*|Boost*|Blink|Aquaveil|Phalanx|Haste*|Flurry*|Regen*|Temper|Refresh*|Sandstorm*|Rainstorm*|Windstorm*|Firestorm*|Hailstorm*|Thunderstorm*|Voidstorm*|Aurorastorm*|Animus*|Gain-*|Invisible|
+		Sneak|Deodorize|Embrava|Klimaform"><equip set="FastCast" /></if>
+		<if ad_skill="Summoning"><equip set="Summon" /></if>
+		
+		<!-- anything else falls under the natural FC set, in most cases, this will be enhancing or enfeebling-->
+		
+</midmagic>
+	
+	<!-- <petskill> -->
+	<!-- <if ad_name=" -->
+				<!-- |Shining Ruby|Glittering Ruby| -->
+                <!-- |Crimson Howl|Inferno Howl| -->
+                <!-- |Frost Armor|Crystal Blessing| -->
+                <!-- |Aerial Armor|Hastega II|Fleet Wind|Hastega| -->
+                <!-- |Earthen Ward|Earthen Armor| -->
+                <!-- |Rolling Thunder|Lightning Armor| -->
+                <!-- |Soothing Current| -->
+                <!-- |Ecliptic Growl|Ecliptic Howl|Heavenward Howl| -->
+                <!-- |Noctoshield|Dream Shroud| -->
+                <!-- |Altana's Favor|Reraise*|Raise*| -->
+               
+                <!-- |Diamond Storm|Sleepga| -->
+                <!-- |Shock Squall| -->
+                <!-- |Slowga|Tidal Roar| -->
+                <!-- |Pavor Nocturnus|Ultimate Terror|Nightmare| -->
+                <!-- |Mewing Lullaby|Eerie Eye| -->
+               
+                <!-- |Healing Ruby*|Whispering Wind|Spring Water| -->
+               
+                <!-- |Poison Nails| -->
+                <!-- |Double Punch|Punch| -->
+                <!-- |Axe Kick|Rush|Slap| -->
+                <!-- |Claw|Predator Claws| -->
+                <!-- |Rock Buster|Mountain Buster|Rock Throw|Crag Throw|Megalith Throw| -->
+                <!-- |Chaotic Strike|Volt Strike| -->
+                <!-- |Tail Whip|Spinning Dive|Barracuda Dive| -->
+                <!-- |Crescent Fang|Eclipse Bite|Moonlit Charge| -->
+                <!-- |Blindside|Camisado| -->
+                <!-- |Regal Scratch|Regal Gash| -->
+               
+                <!-- |Burning Strike|Flaming Crush| -->
+                <!-- |Searing Light|Meteorite|Holy Mist| -->
+                <!-- |Inferno|Fire II|Fire IV|Meteor Strike|Conflag Strike| -->
+                <!-- |Diamond Dust|Blizzard II|Blizzard IV|Heavenly Strike| -->
+                <!-- |Aerial Blast|Aero II|Aero IV|Wind Blade| -->
+                <!-- |Earthen Fury|Stone II|Stone IV|Geocrush| -->
+                <!-- |Judgement Bolt|Thunder II|Thunder IV|Thunderstorm|Thunderspark| -->
+                <!-- |Tidal Wave|Water II|Water IV|Grand Fall| -->
+                <!-- |Howling Moon|Lunar Bay| -->
+                <!-- |Ruinous Omen|Somnolence|Nether Blast|Night Terror| -->
+                <!-- |Level ? Holy"> -->
+				<!-- <equip set="Default" /> -->
+				<!-- </if> -->
+	<!-- </petskill> -->
+	
+	
+	<!-- Forced BP delay -->
+	<jobability>
+	<if ad_name="
+				|Shining Ruby|Glittering Ruby|
+                |Crimson Howl|Inferno Howl|
+                |Frost Armor|Crystal Blessing|
+                |Aerial Armor|Hastega II|Fleet Wind|Hastega|
+                |Earthen Ward|Earthen Armor|
+                |Rolling Thunder|Lightning Armor|
+                |Soothing Current|
+                |Ecliptic Growl|Ecliptic Howl|Heavenward Howl|
+                |Noctoshield|Dream Shroud|
+                |Altana's Favor|Reraise*|Raise*|
+               
+                |Diamond Storm|Sleepga|
+                |Shock Squall|
+                |Slowga|Tidal Roar|
+                |Pavor Nocturnus|Ultimate Terror|Nightmare|
+                |Mewing Lullaby|Eerie Eye|
+               
+                |Healing Ruby*|Whispering Wind|Spring Water|
+               
+                |Poison Nails|
+                |Double Punch|Punch|
+                |Axe Kick|Rush|Slap|
+                |Claw|Predator Claws|
+                |Rock Buster|Mountain Buster|Rock Throw|Crag Throw|Megalith Throw|
+                |Chaotic Strike|Volt Strike|
+                |Tail Whip|Spinning Dive|Barracuda Dive|
+                |Crescent Fang|Eclipse Bite|Moonlit Charge|
+                |Blindside|Camisado|
+                |Regal Scratch|Regal Gash|
+               
+                |Burning Strike|Flaming Crush|
+                |Searing Light|Meteorite|Holy Mist|
+                |Inferno|Fire II|Fire IV|Meteor Strike|Conflag Strike|
+                |Diamond Dust|Blizzard II|Blizzard IV|Heavenly Strike|
+                |Aerial Blast|Aero II|Aero IV|Wind Blade|
+                |Earthen Fury|Stone II|Stone IV|Geocrush|
+                |Judgement Bolt|Thunder II|Thunder IV|Thunderstorm|Thunderspark|
+                |Tidal Wave|Water II|Water IV|Grand Fall|
+                |Howling Moon|Lunar Bay|
+                |Ruinous Omen|Somnolence|Nether Blast|Night Terror|
+                |Level ? Holy|Impact|.">
+				<equip set="BPDelay-" /></if>
+	</jobability>
+	
+	<!-- FOR NEW AVATAR ABILITIES THAT SHOW UP AS . -->
+	
+	<petskill> <!-- Cleans BP Delay and puts on DMG+  -->
+	<if ad_name="
+				|Shining Ruby|Glittering Ruby|
+                |Crimson Howl|Inferno Howl|
+                |Frost Armor|Crystal Blessing|
+                |Aerial Armor|Hastega II|Fleet Wind|Hastega|
+                |Earthen Ward|Earthen Armor|
+                |Rolling Thunder|Lightning Armor|
+                |Soothing Current|
+                |Ecliptic Growl|Ecliptic Howl|Heavenward Howl|
+                |Noctoshield|Dream Shroud|
+                |Altana's Favor|Reraise*|Raise*|
+               
+                |Diamond Storm|Sleepga|
+                |Shock Squall|
+                |Slowga|Tidal Roar|
+                |Pavor Nocturnus|Ultimate Terror|Nightmare|
+                |Mewing Lullaby|Eerie Eye|
+               
+                |Healing Ruby*|Whispering Wind|Spring Water|
+               
+                |Poison Nails|
+                |Double Punch|Punch|
+                |Axe Kick|Rush|Slap|
+                |Claw|Predator Claws|
+                |Rock Buster|Mountain Buster|Rock Throw|Crag Throw|Megalith Throw|
+                |Chaotic Strike|Volt Strike|
+                |Tail Whip|Spinning Dive|Barracuda Dive|
+                |Crescent Fang|Eclipse Bite|Moonlit Charge|
+                |Blindside|Camisado|
+                |Regal Scratch|Regal Gash|
+               
+                |Burning Strike|Flaming Crush|
+                |Searing Light|Meteorite|Holy Mist|
+                |Inferno|Fire II|Fire IV|Meteor Strike|Conflag Strike|
+                |Diamond Dust|Blizzard II|Blizzard IV|Heavenly Strike|
+                |Aerial Blast|Aero II|Aero IV|Wind Blade|
+                |Earthen Fury|Stone II|Stone IV|Geocrush|
+                |Judgement Bolt|Thunder II|Thunder IV|Thunderstorm|Thunderspark|
+                |Tidal Wave|Water II|Water IV|Grand Fall|
+                |Howling Moon|Lunar Bay|
+                |Ruinous Omen|Somnolence|Nether Blast|Night Terror|Cacodemonia|
+                |Level ? Holy|Impact|.">
+				<equip set="Main" /></if>
+
+<!-- Separate bps, need to come back and figureo ut this code -->
+<!-- 521 = regal scratch, 554 = conflag strike, 634 = volte strike, 570 = crag throw, 667 = blindside 663 = cacodmonia-->
+<!-- be sure to categorize these as magical -->
+<!-- <if ad_id=" -->
+	<!-- 521|554|634|570|667|663"> -->
+	<!-- <equip set="DefaultII" /> -->
+<!-- </if> -->
+	
+	
+	
+	</petskill>
+	
+	<weaponskill>
+		<equip set="WS" />
+
+	</weaponskill>
+</ashitacast>
