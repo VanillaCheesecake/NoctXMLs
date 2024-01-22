@@ -43,10 +43,6 @@
 			<back augment="S190012252531924424">Relucent Cape</back>
 		</set>
 	
-
-	
-
-	
 		<set name="Default">
 			<main augment="S21158190741924649262">Nirvana</main> 
 			<ammo augment="S21158190741924649262">Sancus Sachet +1</ammo> <!-- Pet Regen -->
@@ -161,9 +157,6 @@
 			<waist>Eschan Stone</waist>	
 		</set>
 		
- 
-		
-		
 		<set name="Nuke">
 			<head>Volte Beret</head>
 			<body>Gyve Doublet</body>
@@ -178,8 +171,6 @@
 			<ring2>Resonance Ring</ring2>
 			<back>Izdubar Mantle</back>
 		</set>
-		
- 
 		
 		<set name="Helix">
 			<head>Volte Beret</head>
@@ -219,7 +210,7 @@
 		<set name="Summon"> <!-- Used to call avatar -->
 			<main augment="S21158190741924649262">Nirvana</main>   <!-- Pet Regen -->
 			<sub augment="S276514213788546438">Vox Grip</sub>
-			<ammo augment="S276514213788546438">Sancus Sachet +1</ammo>
+			<ammo augment="S8042878483075818726">Sancus Sachet +1</ammo> <!-- SUMMONING SKILL -->
 			<head augment="S276514213788546438">Convoker's Horn +2</head>
 			<body augment="S276514213788546438">Beck. Doublet +1</body>
 			<hands augment="S276514213788546438">Glyphic Bracers +3</hands>
@@ -248,8 +239,7 @@
 		<set name="Skill"> <!-- Used for Avatar's Favor -->
 			<main augment="S276514213788546438">Exemplar</main> <!-- SUMMONING SKILL -->
 			<sub augment="S276514213788546438">Vox Grip</sub> <!-- SUMMONING SKILL -->
-			<range augment="S276514213788546438">Clothespole</range> <!-- SUMMONING SKILL -->
-			<ammo augment="S276514213788546438">Fly Lure</ammo> <!-- SUMMONING SKILL -->
+			<ammo augment="S8042878483075818726">Sancus Sachet +1</ammo> <!-- SUMMONING SKILL -->
 			<head augment="S276514213788546438">Convoker's Horn +2</head>
 			<body augment="S276514213788546438">Beck. Doublet +1</body>
 			<hands augment="S276514213788546438">Glyphic Bracers +3</hands>
@@ -331,6 +321,9 @@
 			<ring1 augment="S276514213788546438">Evoker's Ring</ring1>
 			<ring2 augment="S276514213788546438">Stikini Ring +1</ring2>
 			<back augment="S276514213788546438">Campestres's Cape</back>
+		</set>
+		<set name="Skillsachet">
+			<ammo augment="S8042878483075818726">Sancus Sachet +1</ammo>
 		</set>
 	</sets>
 

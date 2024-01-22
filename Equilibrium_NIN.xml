@@ -172,7 +172,7 @@
 		
 		<set name="Main">
 			<ammo>Bullet</ammo>
-			<ranged>Donar Gun</ranged>
+			<range>Donar Gun</range>
 			<head>Hachiya Hatsu. +3</head>
 			<body>Mochi. Chainmail +3</body>
 			<hands>Ryuo Tekko +1</hands>
@@ -251,8 +251,6 @@
 		<set name="CUL">
 			<main>Hocho</main>
 			<sub augment="S8301439459622419328">Kupo Shield</sub>
-			<range augment="S7978882493864118577">Exalted Bow +1</range>
-			<ammo augment="S7978882493864118577">Obsidian Arrow</ammo>
 			<head>Chef's Hat</head>
 			<body>Culinarian's Apron</body>
 			<hands augment="S190957159755184446">Volte Bracers</hands>

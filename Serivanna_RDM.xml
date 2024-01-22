@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="RDM"><setvar name="macrobook" value="5" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/5-RDM</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
 	<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
+	
 	<sets>
 	
 		<set name="Movement" baseset="Default">
@@ -51,12 +47,8 @@
 			<sub>Alber Strap</sub>
 		</set>
 	
-
-	
-
-	
 		<set name="WS" baseset="Main">
-			<ammo>Sliced Cod</ammo> <!-- TP Bonus +400 -->
+			<ammo>Cheruski Needle</ammo> <!-- TP Bonus +400 -->
 			<head>Viti. Chapeau +3</head> <!-- DMG +64 -->
 			<body>Jhakri Robe +2</body> <!-- TP Bonus +400 -->
 			<hands>Jhakri Cuffs +1</hands> <!-- DMG +64 -->
@@ -72,11 +64,11 @@
 		</set>
 
 		<set name="Crit" baseset="Main">
-			<ammo>Trout Ball</ammo> <!-- CRIT HIT RATE 20% -->
+			<ammo>White Tathlum</ammo> <!-- CRIT HIT RATE 32% -->
 			<waist>Fotia Belt</waist> <!-- TA+12 -->
 			<neck>Fotia Gorget</neck> <!-- DMG+32 -->
 			<ear1>M. Slime Earring</ear1> <!-- WSD+5%, SCD +4, Occ quicken spellcasting +4, Mcrit rate +8 -->
-			<ear2>Telos Earring</ear2>  <!-- CRIT HIT RATE 20% -->
+			<ear2>Telos Earring</ear2>  <!-- CRIT HIT RATE 32% -->
 			<head>Viti. Chapeau +3</head> <!-- DMG+32 -->
 			<hands>Jhakri Cuffs +2</hands> <!-- CRIT DMG +12% -->
 			<legs>Viti. Tights +3</legs> <!-- TA+8 -->
@@ -88,7 +80,7 @@
 		</set>
 		
 		<set name="FTP" baseset="Main">
-			<ammo>Sliced Cod</ammo>
+			<ammo>Cheruski Needle</ammo>
 			<waist>Fotia Belt</waist>
 			<body>Jhakri Robe +2</body>
 			<neck>Fotia Gorget</neck>
@@ -120,7 +112,7 @@
 		</set>
 		
 		<set name="Nuke">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Ea Hat +1</head>
 			<body>Count's Garb</body>
 			<hands>Volte Gloves</hands>
@@ -136,7 +128,7 @@
 		</set>
 		
 		<set name="Helix" baseset="Nuke">
-		<ammo>Lizard Lure</ammo>
+		<ammo>Dosis Tathlum</ammo>
 		<main>Almace</main>
 		<sub>Ammurapi Shield</sub> <!-- MAB MACC -->
 		<waist>Hachirin-no-Obi</waist>
@@ -144,7 +136,7 @@
 		
 		<set name="DarkHelix" baseset="Nuke">
 		<head>Pixie Hairpin +1</head>
-		<ammo>Lizard Lure</ammo>
+		<ammo>Dosis Tathlum</ammo>
 		<main>Almace</main>
 		<sub>Ammurapi Shield</sub> <!-- MAB MACC -->
 		<waist>Hachirin-no-Obi</waist>
@@ -163,7 +155,7 @@
 		</set>
 		
 		<set name="Magical">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Atrophy Chapeau +3</head>
 			<body>Volte Doublet</body>
 			<hands>Volte Gloves</hands>
@@ -227,8 +219,8 @@
 		
 		
 		<set name="Default">
-			<ammo>Minnow</ammo>
-			<range>Fastwater F. Rod</range>
+			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
+			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>
@@ -245,7 +237,7 @@
 		</set>
 		
 		<set name="Main">
-			<ammo>Slice of Bluetail</ammo> <!-- Counter +40 -->
+			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
 			<head>Viti. Chapeau +3</head> <!-- DMG+32 -->
 			<body>Viti. Tabard +3</body> <!-- Crit DMG+12-->
 			<hands>Viti. Gloves +3</hands> <!-- TA+8 -->
@@ -286,7 +278,7 @@
 		
 		
 		<set name="Debuff" baseset="FastCast">
-		<!-- <ammo>Frog Lure</ammo>   <!-- FC+32 -->
+		<!-- <ammo>Crepuscular Pebble</ammo> -->
 		<ammo>Regal Gem</ammo>
 		<head>Viti. Chapeau +3</head>
 		<neck>Dls. Torque +2</neck> <!-- Unaugable -->
@@ -328,9 +320,8 @@
 		
 		<set name="Temper" baseset="FastCast">
 			<main>Pukulatmuj +1</main>
-			<sub>Pukulatmuj</sub>
-			<range>Hume Fishing Rod</range>
-			<ammo>Worm Lure</ammo>
+			<sub>Pukulatmuj</sub>	
+			<ammo augment="S8041160469942618722">Staunch Tathlum +1</ammo> <!-- ENHANCING SKILL -->
 			<head>Befouled Crown</head>
 			<body>Vitiation Tabard</body>
 			<hands>Viti. Gloves +2</hands>
@@ -372,6 +363,9 @@
 			<ring2 augment="S364304684895068482">Stikini Ring +1</ring2>
 		</set>
 	
+		<set name="EnhancingStaunch">
+			<ammo augment="S8041160469942618722">Staunch Tathlum +1</ammo> <!-- ENHANCING SKILL -->
+		</set>
 		</sets>
 
 	<variables>

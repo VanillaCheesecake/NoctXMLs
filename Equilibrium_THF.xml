@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="THF"><setvar name="macrobook" value="6" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/6-THF</command>
 	<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
 	</init>
+	
 	<sets>
 
 		<set name="Nexus">
@@ -48,7 +44,7 @@
 			<feet>Plun. Poulaines +3</feet>
 		
 		
-			<ammo>Antlion Arrow</ammo>
+			<ammo>Cheruski Needle</ammo>
 			<waist>Fotia Belt</waist>
 			<neck>Fotia Gorget</neck>
 			<ear1>Sherida Earring</ear1>
@@ -65,7 +61,7 @@
 			<legs>Pill. Culottes +3</legs>
 			<feet>Plun. Poulaines +3</feet>
 			
-			<ammo>Antlion Arrow</ammo>
+			<ammo>Cheruski Needle</ammo>
 			<waist>Fotia Belt</waist>
 			<neck>Fotia Gorget</neck>
 			<ear1>Sherida Earring</ear1>
@@ -83,7 +79,7 @@
 			<legs>Pill. Culottes +3</legs>
 			<feet>Plun. Poulaines +3</feet>
 			
-			<ammo>Antlion Arrow</ammo>
+			<ammo>Cheruski Needle</ammo>
 			<waist>Metalsinger Belt</waist>
 			<neck>Asperity Necklace</neck>
 			<ear1>Sherida Earring</ear1>
@@ -95,7 +91,7 @@
 
 
 		<set name="Default">
-			<ammo>Bodkin Arrow</ammo>
+			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
 		
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -113,7 +109,7 @@
 		</set>
 		
 		<set name="Main">
-			<ammo>Bodkin Arrow</ammo>
+			<ammo>Crepuscular Pebble</ammo>
 			
 			<head>Pill. Bonnet +3</head>
 			<body>Pillager's Vest +3</body>
@@ -157,7 +153,7 @@
 		</set>
 		
 		<set name="Aeolian">
-			<ammo>Silver Arrow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			
 			<head>Pixie Hairpin +1</head>
 			<body>Rawhide Vest</body>
@@ -172,7 +168,7 @@
 		</set>
 		
 		<set name="Nuke">
-			<ammo>Silver Arrow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			
 			<head>Pixie Hairpin +1</head>
 			<body>Rawhide Vest</body>

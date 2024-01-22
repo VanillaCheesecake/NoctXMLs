@@ -44,8 +44,7 @@
 		<set name="OldMain">
 		<main>Gambanteinn</main>
 		
-		<range>S.H. Fishing Rod</range>
-		<ammo>Minnow</ammo>
+		<ammo>Crepuscular Pebble</ammo>
 		
 		<head>Theophany Cap +3</head>
 		<body>Theo. Briault +3</body>
@@ -63,7 +62,7 @@
 		
 	
 		<set name="Healer">
-		<ammo>Sinking Minnow</ammo>
+		<ammo>Pemphredo Tathlum</ammo>
 
 		<head>Theophany Cap +3</head>
 		<body>Theo. Briault +3</body>
@@ -76,7 +75,7 @@
 		</set>
 		
 		<set name="Default">
-			<ammo>Sabiki Rig</ammo>
+			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo> <!-- Refresh +80 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -122,8 +121,7 @@
 		
 		<set name="Nuke">
 			<!-- <main>nuking_club<main> -->
-			<!-- <range>Glass Fiber F. Rod</range> -->
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Volte Beret</head>
 			<body>Gyve Doublet</body>
 			<hands>Volte Gloves</hands>
@@ -183,9 +181,6 @@
 			<waist>Eschan Stone</waist>	
 		</set>
 		
- 
-		
-		
 		<set name="Enspell">
 			<main augment="S8301439459622419328">Wind Knife</main>
 			<sub>Kupo Shield</sub>
@@ -225,8 +220,8 @@
 		<set name="Main">
 			<!-- <main>Gambanteinn</main> -->
 			<!-- <sub>Yagrush</sub> -->
-			<range augment="S6176686717137314381">Bamboo Fish. Rod</range>
-			<ammo augment="S1821093921192018574">Minnow</ammo>
+			
+			<ammo>Crepuscular Pebble</ammo>
 			<head>Piety Cap +3</head>
 			<body>Piety Bliaut +3</body>
 			<hands>Piety Mitts +3</hands>
@@ -244,8 +239,8 @@
 		<set name="ws1">
 			<!-- <main augment="S6176686717137314381">Gambanteinn</main> -->
 			<!-- <sub augment="S182109392119204240">Yagrush</sub> -->
-			<range augment="S6176686717137314381">Bamboo Fish. Rod</range>
-			<ammo augment="S1821093921192018574">Minnow</ammo>
+			
+			<ammo>Crepuscular Pebble</ammo>
 			<head augment="S14480">Piety Cap +3</head>
 			<body augment="S14480">Piety Bliaut +3</body>
 			<hands augment="S14480">Piety Mitts +3</hands>

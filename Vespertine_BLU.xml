@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="BLU"><setvar name="macrobook" value="16" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/16-BLU</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
 	<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
+	
 	<sets>
 	
 		<set name="Movement" baseset="Default">
@@ -65,7 +61,7 @@
 		</set>
 		
 		<set name="WS">
-			<ammo>Minnow</ammo>
+			<ammo>Crepuscular Pebble</ammo>
 			<head>Luh. Keffiyeh +3</head>
 			<hands>Jhakri Cuffs +2</hands>
 			<body>Assim. Jubbah +3</body>
@@ -81,7 +77,7 @@
 		</set>
 		
 		<set name="Default">
-			<ammo>Minnow</ammo>
+			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -99,7 +95,7 @@
 		</set>
 		
 		<set name="Main">
-			<ammo>Minnow</ammo>
+			<ammo>Crepuscular Pebble</ammo>
 			<neck>Asperity Necklace</neck>
 			<head>Assim. Keffiyeh +3</head>
 			<body>Assim. Jubbah +3</body>
@@ -137,7 +133,7 @@
  
 		
 		<set name="Nuke">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Jhakri Coronal +2</head>
 			<body>Gyve Doublet</body>
 			<legs>Luhlaza Shalwar +3</legs>  <!-- MACC/MAB+40, they also have the assimilation augment effect for mcrit +15%!! -->
@@ -153,7 +149,7 @@
 		</set>	
 		
 		<set name="Magical">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Jhakri Coronal +2</head>
 			<body>Gyve Doublet</body>
 			<legs>Luhlaza Shalwar +3</legs>  <!-- MACC/MAB+40, they also have the assimilation augment effect for mcrit +15%!! -->

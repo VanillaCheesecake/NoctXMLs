@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="SAM"><setvar name="macrobook" value="12" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/12-SAM</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
 		<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
+	
 	<sets>
 	
 		<set name="Movement" baseset="Default">
@@ -44,7 +40,7 @@
 		</set>
 
 		<set name="Nuke">
-			<ammo>Silver Arrow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			
 			<neck>Baetyl Pendant</neck>
 			<waist>Eschan Stone</waist>
@@ -73,7 +69,7 @@
 		
 		
 		<set name="WS">
-			<ammo augment="S14480">Staunch Tathlum +1</ammo> <!-- TA -->
+			<ammo>Crepuscular Pebble</ammo>
 			<head>Sakonji Kabuto +3</head>
 			<body>Sakonji Domaru +3</body> <!-- tbp 400 --> 
 			<hands>Wakido Kote +3</hands>

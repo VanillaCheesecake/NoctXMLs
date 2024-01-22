@@ -108,7 +108,7 @@
 		</set>
 		
 		<set name="Nuke">
-			<!-- <ammo>Sinking Minnow</ammo> -->
+			<!-- <ammo>Pemphredo Tathlum</ammo> -->
 			
 			<neck>Baetyl Pendant</neck>
 			<waist>Eschan Stone</waist>
@@ -171,7 +171,8 @@
 		<set name="Enspell">
 			<main augment="S8301439459622419328">Wind Knife</main>
 			<sub>Kupo Shield</sub>
-			<ammo>Battery</ammo>
+			<range>Yew Fishing Rod</range>
+			<ammo>Peeled Crayfish</ammo>
 			<head>Scarlet Ribbon</head>
 			<body>Field Tunica</body>
 			<hands>Field Gloves</hands>

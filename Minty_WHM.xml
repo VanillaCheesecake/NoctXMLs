@@ -46,9 +46,7 @@
 		
 		<set name="Main">
 		<!-- <main>Gambanteinn</main> -->
-		
-		<range>S.H. Fishing Rod</range>  <!-- Will cause TP to reset! -->
-		<ammo>Minnow</ammo>
+		<ammo>Crepuscular Pebble</ammo>
 		
 		<head>Piety Cap +3</head> <!-- TA -->
 		<body>Piety Bliaut +3</body> <!-- TA -->
@@ -66,7 +64,7 @@
 		
 	
 		<set name="Healer">
-		<ammo>Sinking Minnow</ammo>
+		<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
 
 		<head>Theophany Cap +3</head>
 		<body>Theo. Bliaut +3</body>
@@ -79,7 +77,7 @@
 		</set>
 		
 		<set name="Default">
-			<ammo>Sabiki Rig</ammo>
+			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo> <!-- Refresh +80 -->
 			
 			<sub>Genesis Shield</sub>
 			
@@ -99,7 +97,7 @@
 		</set>
 
 		<set name="WS" baseset="Main">
-			<ammo>Minnow</ammo>
+			<ammo>Crepuscular Pebble</ammo>
 		
 		
 			<waist>Fotia Belt</waist>
@@ -107,7 +105,7 @@
 		</set>
 		
 		<set name="Hexa">
-			<ammo>Minnow</ammo> <!-- TA -->
+			<ammo>Crepuscular Pebble</ammo> <!-- TA -->
 			
 			<ear1>Tati Earring +1</ear1> <!-- Crit Hit Rate -->
 			<ear2>Tati Earring +1</ear2> <!-- Crit Hit Rate -->
@@ -151,8 +149,7 @@
 		<set name="Nuke">
 			<!-- <main>nuking_club<main> -->
 			<sub>Ammurapi Shield</sub>
-			<range>Glass Fiber F. Rod</range>
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Volte Beret</head>
 			<body>Count's Garb</body>
 			<hands>Volte Gloves</hands>
@@ -174,8 +171,7 @@
 		
 		<set name="Magical">
 			<!-- <main>nuking_club<main> -->
-			<range>Glass Fiber F. Rod</range>
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Volte Beret</head>
 			<body>Shamash Robe</body>
 			<hands>Volte Gloves</hands>
@@ -192,8 +188,7 @@
 		
 		<set name="LightWS">
 			<!-- <main>nuking_club<main> -->
-			<range>Glass Fiber F. Rod</range>
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Volte Beret</head>
 			<body>Shamash Robe</body>
 			<hands>Volte Gloves</hands>
@@ -298,8 +293,7 @@
 			<main>Gambanteinn</main>
 			<!-- <sub augment="S12380432141122528825">Genesis Shield</sub> -->
 			<sub augment="S27275606005966563505">Bloodbead Ecu</sub>
-			<range augment="S7973728454464518565">Glass Fiber F. Rod</range>
-			<ammo augment="S27275606005966563505">Meatball</ammo>
+			<ammo>Charitoni Sling</ammo>
 			<head augment="S27275606005966563505">Pinga Crown +1</head>
 			<body augment="S27275606005966563505">Ros. Jaseran +1</body>
 			<!-- <hands augment="S27275606005966563505">Piety Mitts +2</hands> -->

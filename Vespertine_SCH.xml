@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="SCH"><setvar name="macrobook" value="20" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/20-SCH</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
 		<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
+	
 	<sets>
 
 		<set name="Movement" baseset="Default">
@@ -48,7 +44,7 @@
 		</set>
 		
 		<set name="Default">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -66,8 +62,8 @@
 		</set>
 		
 		<set name="Main">
-			<range augment="S7973728454464518565">Glass Fiber F. Rod</range>
-			<ammo>Sinking Minnow</ammo>
+			
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Volte Beret</head>
 			<body>Peda. Gown +3</body>
 			<hands>Peda. Bracers +3</hands>
@@ -83,8 +79,8 @@
 		</set>
 		
 		<set name="Nuke">
-			<range augment="S7973728454464518565">Glass Fiber F. Rod</range>
-			<ammo>Sinking Minnow</ammo>
+			
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Volte Beret</head>
 			<body>Peda. Gown +3</body>
 			<hands>Peda. Bracers +3</hands>
@@ -116,6 +112,7 @@
 		</set>
 		
 		<set name="Helix" baseset="Main">
+		<ammo>Dosis Tathlum</ammo>
 			<head>Volte Beret</head>
 			<waist>Hachirin-no-Obi</waist>
 		</set>

@@ -5,18 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
 	<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	<command delay="1000">/exec Jobs/1-WAR</command>
 	</init>
-	<!-- <if p_mainjob="WAR"><setvar name="WAR Checker" value="1" /><command delay="1000">/exec Jobs/1-WAR</command></if> -->
-	<!-- <if p_mainjob="WAR"><setvar name="macrobook" value="1" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->	
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
+
 	<sets>
 
 		<set name="Nexus">
@@ -38,7 +33,7 @@
 		</set>
 
 		<set name="Movement" baseset="Default">
-			<ammo>Sabiki Rig</ammo>
+			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo> <!-- Refresh +80 -->
 			<head>Valorous Mask</head>
 			<feet>Hermes' Sandals</feet>
 			<body>Makora Meikogai</body>
@@ -77,7 +72,7 @@
 		</set>
 		
 		<set name="WS">
-			<ammo>Minnow</ammo>
+			<ammo>Crepuscular Pebble</ammo>
 		
 			<head>Agoge Mask +3</head>
 			<body>Pumm. Lorica +3</body>
@@ -94,7 +89,7 @@
 		</set>
 		
 		<set name="Default">
-			<ammo>Fly Lure</ammo>
+			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -112,13 +107,13 @@
 		</set>
 		
 		<set name="DefaultMask" baseset="Default">
-			<ammo>Sabiki Rig</ammo>
+			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo> <!-- Refresh +80 -->
 			<head>Valorous Mask</head>
 			<body>Makora Meikogai</body>
 		</set>
 		
 		<set name="Main">
-			<ammo>Minnow</ammo>
+			<ammo>Crepuscular Pebble</ammo>
 			<head>Boii Mask +1</head>
 			<body>Volte Haubert</body>
 			<hands>Iktomi Dastanas</hands>
@@ -154,10 +149,8 @@
 			<waist>Eschan Stone</waist>	
 		</set>
 		
- 
-		
 		<set name="Magical">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Agoge Mask +3</head>
 			<body>Pumm. Lorica +3</body>
 			<hands>Agoge Mufflers +3</hands>
@@ -173,7 +166,7 @@
 		</set>
 		
 		<set name="Nuke">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Agoge Mask +3</head>
 			<body>Pumm. Lorica +3</body>
 			<hands>Agoge Mufflers +3</hands>
@@ -187,8 +180,6 @@
 			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
 			<back>Izdubar Mantle</back>
 		</set>
-		
- 
 		
 		<set name="Enspell">
 			<main augment="S8301439459622419328">Wind Knife</main>
@@ -236,7 +227,7 @@
 		</set>
 
 		<set name="THTT">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>

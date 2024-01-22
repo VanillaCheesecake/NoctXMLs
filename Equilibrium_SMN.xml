@@ -41,10 +41,6 @@
 			<back augment="S190012252531924424">Relucent Cape</back>
 		</set>
 	
-
-	
-
-	
 		<set name="Default">
 			<ammo>Sancus Sachet +1</ammo>
 			
@@ -135,10 +131,7 @@
 			<back>Izdubar Mantle</back>
 			<waist>Eschan Stone</waist>	
 		</set>
-		
- 
-		
-		
+	
 		<set name="Nuke">
 			<head>Volte Beret</head>
 			<body>Gyve Doublet</body>
@@ -154,8 +147,6 @@
 			<back>Izdubar Mantle</back>
 		</set>
 		
- 
-		
 		<set name="Helix">
 			<head>Volte Beret</head>
 			<body>Gyve Doublet</body>
@@ -170,7 +161,6 @@
 			<ring2>Resonance Ring</ring2>
 			<back>Izdubar Mantle</back>
 		</set>
-		
 		
 		<set name="Enspell">
 			<main augment="S8301439459622419328">Wind Knife</main>

@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="DRK"><setvar name="macrobook" value="8" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/8-DRK</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
-		<command>/bind F9 /th</command>
+	<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
+	
 	<sets>
 	
 		<set name="Movement" baseset="Default">
@@ -58,7 +54,7 @@
 		</set>
 	
 		<set name="WS" baseset="Main">
-			<ammo></ammo>
+			<ammo>Crepuscular Pebble</ammo>
 			<waist>Metalsinger Belt</waist>
 			<neck>Asperity Necklace</neck>
 			<back>Laic Mantle</back>
@@ -79,7 +75,7 @@
 		</set>
 		
 		<set name="Default">
-			<ammo>Minnow</ammo>
+			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -97,7 +93,7 @@
 		</set>
 		
 		<set name="Nuke">
-			<ammo>Sinking Minnow</ammo>
+			<ammo>Pemphredo Tathlum</ammo>
 			<legs>Augury Cuisses +1</legs>
 			<feet>Ig. Sollerets +3</feet>
 			<neck>Baetyl Pendant</neck>
@@ -114,7 +110,7 @@
 		<set name="Main">
 			<!-- <main augment="S6176686717137314381">Caladbolg</main> -->
 			<!-- <sub augment="S3579480363022218574">Capitoline Strap</sub> -->
-			<ammo>Minnow</ammo>
+			<ammo>Crepuscular Pebble</ammo>
 			<head>Ig. Burgeonet +3</head>
 			<body>Ignominy Cuirass +3</body>
 			<hands>Ig. Gauntlets +3</hands>
@@ -130,8 +126,8 @@
 		</set>
 		
 		<set name="Main2" baseset="Main">
-			<!-- <range>Fastwater F. Rod</range> -->
-			<ammo>Minnow</ammo>
+			<!--  -->
+			<ammo>Crepuscular Pebble</ammo>
 			<head>Ratri Sallet +1</head>
 			<feet>Sulev. Leggings +2</feet>
 			<legs>Fall. Flanchard +3</legs>
@@ -240,8 +236,8 @@
 		<set name="showoff">
 			<main augment="S6176686717137314381">Reikiko</main>
 			<sub augment="S22672">Blurred Shield +1</sub>
-			<range augment="S6176686717137314381">Bamboo Fish. Rod</range>
-			<ammo augment="S1821093921192018574">Minnow</ammo>
+			
+			<ammo>Crepuscular Pebble</ammo>
 			<head augment="S182109392262544240">Ig. Burgeonet +3</head>
 			<body augment="S182109392262544240">Ignominy Cuirass +3</body>
 			<hands augment="S14480">Odyssean Gauntlets</hands>

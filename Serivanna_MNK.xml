@@ -5,17 +5,13 @@
 		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
 		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
+	
 	<init>
-	<!-- <if p_mainjob="MNK"><setvar name="macrobook" value="2" /><setvar name="macropage" value="1" /></if> -->
-		<!-- <if p_mainjob="NIN"><setvar name="macrobook" value="13" /><setvar name="macropage" value="1" /><setvar name="lockstyleset" value="33" /></if>  Use this if including Lockstyle-->
-	<!-- <command delay="2000">/macro book $macrobook< -->
-	<!-- <command delay="2000">/macro set $macropage< -->
 	<command delay="1000">/exec Jobs/2-MNK</command>
-	<!-- <command delay='4000'>/lockstyleset $lockstyleset< -->
-	<!-- <command delay="3000">/echo Changed to %p_job!< -->
-		<command>/bind F9 /th</command>
+	<command>/bind F9 /th</command>
 	<command>/bind F10 /main</command>
 	</init>
+	
 	<sets>
 	
 		<set name="Nexus">
@@ -36,6 +32,94 @@
 			<back augment="S190012252531924424">Relucent Cape</back>
 		</set>
 	
+		<set name="Crit">
+			<ammo>White Tathlum</ammo>
+			<head>Hes. Crown +3</head>
+			<body>Anch. Cyclas +3</body>
+			<hands>Anchor. Gloves +3</hands>
+			<legs>Hiza. Hizayoroi +2</legs>
+			<feet>Hes. Gaiters +3</feet>
+			<waist augment="S277974524951766472">Moonbow Belt +1</waist> <!-- CRIT -->
+			<neck>Fotia Gorget</neck>
+			<ear1>Ishvara Earring</ear1>
+			<ear2 augment="S30864">Balder Earring</ear2>  <!-- TA +16 -->
+			<ring1 augment="S4432903715027618759">Dark Ring</ring1>
+			<ring2>Dark Ring</ring2>
+			<!-- <ring1>Niqmaddu Ring</ring1> -->
+			<!-- <ring2>Regal Ring</ring2> -->
+			<!-- <ear1>Telos Earring</ear1> -->
+			<!-- <ear2 augment="S353610053140898233">Mache Earring +1</ear2> <!-- CRIT -->
+			<back>Laic Mantle</back>
+		</set>
+	
+		<set name="Magical">
+			<ammo>Pemphredo Tathlum</ammo>
+			<head>Pixie Hairpin +1</head>
+			<body>Wayfarer Robe</body>
+			<hands>Wayfarer Cuffs</hands>
+			<legs>Limbo Trousers</legs>
+			<feet>Wayfarer Clogs</feet>
+			<neck>Baetyl Pendant</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
+			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
+			<back>Izdubar Mantle</back>
+		</set> 
+		
+		<set name="Nuke">
+			<ammo>Pemphredo Tathlum</ammo>
+			<head>Pixie Hairpin +1</head>
+			<body>Wayfarer Robe</body>
+			<hands>Wayfarer Cuffs</hands>
+			<legs>Limbo Trousers</legs>
+			<feet>Wayfarer Clogs</feet>
+			<neck>Baetyl Pendant</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
+			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
+			<back>Izdubar Mantle</back>
+		</set>
+		
+		<set name="Boost">
+			<hands>Anchor. Gloves +3</hands>
+		</set>
+		
+		<set name="Counterstance">
+			<feet>Hes. Gaiters +3</feet>
+		</set>
+		
+		<set name="Chi" baseset="WS">
+			<feet>Hes. Crown +3</feet>
+		</set>
+		
+		<set name="Impetus">
+			<body>Bhikku Cyclas +1</body>
+		</set>
+		
+		<set name="Movement" baseset="Default">
+			<ring1>Shneddick Ring</ring1>
+			<feet>Herald's Gaiters</feet>
+		</set>
+		
+		<set name="Club">
+			<main>Blurred Rod +1</main>
+			<sub>Blurred Rod +1</sub>
+		</set>
+		
+		<set name="Stave">
+			<main>Exalted Staff</main>
+			<sub>Alber Strap</sub>
+		</set>
+		
+		<set name="Swords">
+			<main>Nihility</main>
+			<sub>Kam'lanaut's Sword</sub>
+		</set>
+
 		<set name="FastCast">
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -53,7 +137,7 @@
 		</set>
 	
 		<set name="Default">
-			<ammo augment="S14480">Staunch Tathlum +1</ammo> <!-- TA -->
+			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -62,54 +146,47 @@
 			<feet>Volte Boots</feet>
 			
 			<neck>Warder's Charm +1</neck>
-			<waist>Resolute Belt</waist>
+			<waist augment="S12333616283242828716">Moonbow Belt +1</waist> <!-- STP SB -->
 			<ear1>Hearty Earring</ear1>
 			<ear2>Sanare Earring</ear2>
 			<ring1>Shadow Ring</ring1>
 			<ring2>Vocane Ring</ring2>
 			<back>Shadow Mantle</back>
 		</set>
-	
-	
+		
+		
 		<set name="Main">
-			<ammo>Minnow</ammo>
-			<head>Anch. Crown +3</head>
-			<body>Anch. Cyclas +3</body>
-			<hands>Anchor. Gloves +3</hands>
-			<legs>Anch. Hose +3</legs>
+			<ammo augment="S7978882493864118577">Staunch Tathlum +1</ammo> <!-- Counter +40 -->
+			<head>Hes. Crown +3</head>
+			<body>Hes. Cyclas +3</body>
+			<hands>Hes. Gloves +3</hands>
+			<legs>Hes. Hose +3</legs>
 			<feet>Anch. Gaiters +3</feet>
 			
 			<neck>Asperity Necklace</neck>
-			<waist>Engraved Belt</waist>
+			<waist augment="S12333616283242828716">Moonbow Belt +1</waist> <!-- STP SB -->
 			<ear1>Telos Earring</ear1>
-			<ear2 augment="S353610053140898233">Mache Earring +1</ear2> <!-- CRIT MACHE -->
-			<ring1>Petrov Ring</ring1>
-			<ring2>Hetairoi Ring</ring2>
+			<ear2 augment="S353610053140898233">Mache Earring +1</ear2> <!-- CRIT  -->
+			<ring1>Hetairoi Ring</ring1>
+			<ring2>Regal Ring</ring2>
 			<back>Laic Mantle</back>
 		</set>
 
-		<set name="WS" baseset="Main">
-			<ear1>Sherida Earring</ear1>
-			<ear2 augment="S182109392119204240">Mache Earring +1</ear2> <!-- TA MACHE -->
-			<waist>Fotia Belt</waist>
-			<neck>Fotia Gorget</neck>
-			<ring1>Niqmaddu Ring</ring1>
-			<back>Laic Mantle</back>
+		<set name="WS">
+			<ammo>Crepuscular Pebble</ammo>
+			<head>Hes. Crown +3</head> <!-- TA +16 -->
+			<body>Hes. Cyclas +3</body> <!-- TA +16 -->
+			<hands>Anchor. Gloves +3</hands>  <!-- TA +16 -->
+			<legs>Hiza. Hizayoroi +2</legs> <!-- Save TP + 200 -->
+			<feet>Hes. Gaiters +3</feet> <!-- Save TP + 200, swaps to Heidrek anyway, which alsoh has Save TP + 200 -->
+			<neck>Fotia Gorget</neck> <!-- DMG +64 -->
+			<waist>Fotia Belt</waist>  <!-- DMG +64 -->
+			<ear1>Ishvara Earring</ear1> <!-- TA +16 -->
+			<ear2 augment="S30864">Balder Earring</ear2>  <!-- TA +16 -->
+			<ring1 augment="S4432903715027618759">Dark Ring</ring1>
+			<ring2>Dark Ring</ring2> <!-- TA +16 -->
+			<back >Laic Mantle</back> <!-- TA +16 -->
 		</set>
-		
-		<set name="Nuke">
-			<ammo>Sinking Minnow</ammo>
-			
-			<neck>Baetyl Pendant</neck>
-			<waist>Eschan Stone</waist>
-			<ear1>Hecate's Earring</ear1>
-			<ear2>Choleric Earring</ear2>
-			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
-			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
-			<back>Izdubar Mantle</back>
-		</set>
-		
- 
 		
 		<set name="TH" baseset="Default" lock="true">
 			<head>Volte Cap</head>
@@ -132,8 +209,6 @@
 			<waist>Eschan Stone</waist>	
 		</set>
 		
- 
-		
 		<set name="Enspell">
 			<main augment="S8301439459622419328">Wind Knife</main>
 			<sub>Kupo Shield</sub>
@@ -153,15 +228,19 @@
 			<back>Wizard's Mantle</back>
 		</set>
 		
-		<set name="Movement" baseset="Default">
-			<feet>Herald's Gaiters</feet>
-			<ring1>Shneddick Ring</ring1>
-		</set>
-		
 		<set name="Chakra">
 			<body>Anch. Cyclas +3</body>
+			<hands>Hes. Gloves +3</hands>
 		</set>
 		
+		<set name="Mantra">
+			<feet>Hes. Gaiters +3</feet>
+		</set>
+		
+		<set name="Footwork">
+		<feet>Bhikku Gaiters +1</feet>
+		<!-- <feet>Shukuyu Sune-Ate</feet> -->
+		</set>
 		
 		<set name="Cure" baseset="FastCast"> <!-- Do not use this set if WHM -->
 			<neck>Phalaina Locket</neck>
@@ -173,6 +252,38 @@
 			<back>Solemnity Cape</back>
 		</set>
 		
+		 <set name="HeroicsWS" baseset="WS">
+        <feet>Heidrek Boots</feet>
+        </set>
+        
+        <set name="HeroicsCrit" baseset="Crit">
+        <feet>Heidrek Boots</feet>
+        </set>
+        
+        <set name="HeroicsMagical" baseset="Magical">
+        <feet>Heidrek Boots</feet>
+        </set>
+		
+		<set name="EARRINGS">
+			 <ear1 augment="S94147119699362192">Mache Earring +1</ear1> <!-- TA -->
+			<ear2 augment="S353610053140898233">Mache Earring +1</ear2><!-- CRIT -->
+		</set>
+		
+		<set name="moonbowbelt">
+			<waist augment="S277974524951766472">Moonbow Belt +1</waist> <!-- CRIT -->
+		</set>
+		
+		<set name="defensivemoonbow">
+			<waist augment="S9710639732129722609">Moonbow Belt +1</waist><!-- MEVA -->
+		</set>
+		
+		<set name="stpmoonbow">
+			<waist augment="S12333616283242828716">Moonbow Belt +1</waist> <!-- STP SB -->
+		</set>
+		
+		<set name="balder16">
+			<ear1 augment="S30864">Balder Earring</ear1>
+		</set>
 	</sets>
 
 	<variables>
@@ -188,7 +299,7 @@
 	
 	<!-- handle gear commands -->
 		
-		<cmd input="/main">
+	<cmd input="/main">
 	<if advanced="$Main=0">
 	<setvar name="Main" value="1" />
 	<setvar name="TH" value="0" />
@@ -233,7 +344,7 @@
 	</else>
 	</cmd>
 
-		<cmd input="/autoth">
+	<cmd input="/autoth">
 	<if advanced="$AutoTH=1">
 	<setvar name="AutoTH" value="0" />
 	<command>/echo Will no longer automatically equip TH set upon engaging in melee range for 3 seconds. Toggle on with /autoth.</command>
@@ -246,6 +357,17 @@
 	</cmd>
 
 	<!-- end of handle gear commands -->
+	<cmd input="/blades">
+	<command>/ac set blades</command>
+	</cmd>
+	
+	<cmd input="/stave">
+	<command>/ac set staff</command>
+	</cmd>
+
+	<cmd input="/clubs">
+	<command>/ac set clubs</command>
+	</cmd>
 	
 	<cmd input="/cancel wallga">
 	<command>/cancel 37</command>
@@ -576,7 +698,7 @@
 		</equip>
 
         <command delay="150">/item "Hallowed Water" &lt;me&gt;</command>
-    </if>
+		</if>
 	   
 	<if buffactive="31"> <!-- Plague -->
 		<command delay="150">/item "Remedy Ointment" &lt;me&gt;</command>
@@ -653,7 +775,14 @@
 		</if>
 	
 	<if p_status="idle"><setvar name="FirstTH" value="0" /></if>
-			
+	
+	<if p_status="idle">
+		<if buffactive="45">
+			<equip lock="true">
+			<waist>Ask Sash</waist>
+		</equip>
+		</if>
+	</if>		
 		
 		<if advanced="$TH=1"><equip set="TH" /></if> <!--Should always be at the bottom of equips for compatibility -->
 		<if advanced="$Main=1"><equip set="Main" /></if><!--Should always be at the bottom of equips for compatibility -->
@@ -734,7 +863,7 @@
 </premagic>
 
 <midmagic>
-				
+		
 		
 		<!-- stoneskin check -->
 		<if ad_name="Stoneskin|Metallic Body|Diamondhide">
@@ -754,6 +883,13 @@
 		
 		<!-- Physical BLU spell check -->
 		<if ad_name="Heavy Strike"><equip set="Heavy" />
+		</if>
+
+		<!-- <if ad_name="Sudden Lunge|Water Bomb"><equip set="THSpell" /> -->
+		<!-- </if> -->
+
+		<if ad_name="Spectral Floe|Searing Tempest|Subduction|Anvil Lightning|Magic Hammer"><equip set="Magical" />
+		<gearlock length="1" />
 		</if>
 
 
@@ -795,11 +931,31 @@
 	
 	<jobability>
 		<if ad_name="Chakra"><equip set="Chakra" /></if>
+		<if ad_name="Boost"><equip set="Boost" /></if>
+		<if ad_name="Mantra"><equip set="Mantra" /></if>
+		<if ad_name="Counterstance"><equip set="Counterstance" /></if>
+		<if ad_name="Impetus"><equip set= "Impetus" /></if>
+		<if ad_name="Footwork"><equip set= "Footwork" /></if>
+		<if ad_name="Chi Blast"><equip set= "Chi" /></if>
+		<if ad_name="Jump"><equip set= "WS" /></if>
     </jobability>
 
 
 	<weaponskill>
-		<equip set="WS" />
 
+		<if advanced="$Heroics=1"> <!-- Checks to see if the player is in a heroics zone or not -->
+        <equip set="HeroicsWS" /> <!-- Runs when player is in a heroics zone -->
+		<if ad_name="Victory Smite|Ascetic's Fury|Backhand Blow"><equip set="HeroicsCrit" /></if>
+		<if ad_name="Rock Crusher|Earth Crusher|Starburst|Sunburst|Cataclysm|Tartarus Torpor|Shining Strike|Seraph Strike|Flash Nova|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade"><equip set="HeroicsMagical" /></if>
+		<if ad_name="Shell Crusher"><equip set="FastCast" /></if>
+        </if>
+        
+        <else>  <!-- Runs when player isn't in a heroics zone -->
+        <equip set="WS" />
+		<if ad_name="Victory Smite|Ascetic's Fury|Backhand Blow"><equip set="Crit" /></if>
+		<if ad_name="Rock Crusher|Earth Crusher|Starburst|Sunburst|Cataclysm|Tartarus Torpor|Shining Strike|Seraph Strike|Flash Nova|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade"><equip set="Magical" /></if>
+	   <if ad_name="Shell Crusher"><equip set="FastCast" /></if>
+        </else>
+		
 	</weaponskill>
 </ashitacast>
