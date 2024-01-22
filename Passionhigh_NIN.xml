@@ -28,6 +28,21 @@
 		<!-- there's nothing in here, it's purely for making batch processes easier by giving a reference point! -->
 		</set>
 		
+		<set name="Occultation">
+			<head augment="S16771889851129639050">Volte Cap</head>
+			<body augment="S5030342454009611712">Volte Jupon</body>
+			<hands augment="S5030342454009611712">Volte Bracers</hands>
+			<legs augment="S5030342454009611712">Volte Hose</legs>
+			<feet augment="S5030342454009611712">Volte Boots</feet>
+			<neck augment="S364691237850038491">Deceiver's Torque</neck>
+			<waist augment="S364691237850038491">Swift Belt</waist>
+			<ear1 augment="S364691237850038491">Njordr Earring</ear1>
+			<ear2 augment="S364691237850038491">Clear Earring</ear2>
+			<ring1 augment="S364691237850038491">Stikini Ring +1</ring1>
+			<ring2 augment="S364691237850038491">Renaye Ring</ring2>
+			<back augment="S16772962219431639052">Shaper's Shawl</back>
+		</set>
+		
 		<set name="Heavy" baseset="Main">
 			<neck augment="S190012252531924424">Ire Torque +1</neck>
 			<waist augment="S190012252531924424">Grunfeld Rope</waist>
@@ -893,6 +908,8 @@
 
 		<!-- special cases -->
 		<if ad_name="*helix"><equip set="Helix" /><gearlock length="1" /></if>
+		
+		<if ad_name="Occultation"><equip set="Occultation" /></if>
 
 		<if ad_name="Cure*|Cura*|White Wind|Restoral|Plenilune Embrace|Exuviation|Magic Fruit|Pollen|Wild Carrot|Healing Breeze"><equip set="Cure" /></if>
 

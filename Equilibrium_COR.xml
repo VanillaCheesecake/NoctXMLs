@@ -28,6 +28,21 @@
 		<!-- there's nothing in here, it's purely for making batch processes easier by giving a reference point! -->
 		</set>
 		
+		<set name="Occultation">
+			<head augment="S16771889851129639050">Volte Cap</head>
+			<body augment="S5030342454009611712">Volte Jupon</body>
+			<hands augment="S5030342454009611712">Volte Bracers</hands>
+			<legs augment="S5030342454009611712">Volte Hose</legs>
+			<feet augment="S5030342454009611712">Volte Boots</feet>
+			<neck augment="S364691237850038491">Deceiver's Torque</neck>
+			<waist augment="S364691237850038491">Swift Belt</waist>
+			<ear1 augment="S364691237850038491">Njordr Earring</ear1>
+			<ear2 augment="S364691237850038491">Clear Earring</ear2>
+			<ring1 augment="S364691237850038491">Stikini Ring +1</ring1>
+			<ring2 augment="S364691237850038491">Renaye Ring</ring2>
+			<back augment="S16772962219431639052">Shaper's Shawl</back>
+		</set>
+		
 		<set name="Heavy" baseset="Main">
 			<neck augment="S190012252531924424">Ire Torque +1</neck> <!-- Crit Damage -->
 			<waist augment="S190012252531924424">Grunfeld Rope</waist> <!-- Crit Damage -->
@@ -972,6 +987,8 @@
 
 		<!-- special cases -->
 		<if ad_name="*helix"><equip set="Helix" /><gearlock length="1" /></if>
+		
+		<if ad_name="Occultation"><equip set="Occultation" /></if>
 
 		<if ad_name="Cure*|Cura*|White Wind|Restoral|Plenilune Embrace|Exuviation|Magic Fruit|Pollen|Wild Carrot|Healing Breeze"><equip set="Cure" /></if>
 
@@ -983,16 +1000,6 @@
 		<!-- anything else falls under the natural FC set, in most cases, this will be enhancing or enfeebling-->
 		
 </midmagic>
-
-	<!-- <weaponskill> -->
-		<!-- <equip set="WS" /> -->
-		<!-- <if ad_name="Wildfire|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade|Earth Crusher|Tartarus Torpor"><equip set="Magical" /></if> -->
-		<!-- <if ad_name="Leaden Salute"><equip set="MagicalDark" /></if> -->
-		<!-- <if ad_name="Savage Blade|Expiacion"><equip set="WS" /></if> -->
-		<!-- <if ad_name="Requiescat"><equip set="FTP" /></if> -->
-		<!-- <if ad_name="Evisceration"><equip set="FTP" /></if> -->
-		<!-- <if ad_name="Last Stand"><equip set="RATT" /></if> -->
-	<!-- </weaponskill> -->
 	
 	<weaponskill>
 	
