@@ -113,7 +113,7 @@
 		</set>
 		
  
-		<set name="FastCast">
+		<set name="FastCast"> <!-- Some jobs use Tempus Fugit +1 in the belt slot instead -->
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>
@@ -805,6 +805,8 @@
 		<if ad_name="Occultation"><equip set="Occultation" /></if>
 		
 		<if ad_name="Addle"><equip set="Addle" /></if>
+		
+		<if ad_name="Sudden Lunge|Water Bomb"><equip set="TH" /></if>
 
 		<if ad_name="Cure*|Cura*|White Wind|Restoral|Plenilune Embrace|Exuviation|Magic Fruit|Pollen|Wild Carrot|Healing Breeze"><equip set="Cure" /></if>
 
