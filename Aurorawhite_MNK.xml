@@ -22,6 +22,10 @@
 		<!-- there's nothing in here, it's purely for making batch processes easier by giving a reference point! -->
 		</set>
 		
+		<set name="Addle" baseset="FastCast">
+		<feet>Muddle Pumps</feet>
+		</set>
+		
 		<set name="Occultation">
 			<head augment="S16771889851129639050">Volte Cap</head>
 			<body augment="S5030342454009611712">Volte Jupon</body>
@@ -69,21 +73,33 @@
 	
 		<set name="Magical">
 			<ammo>Pemphredo Tathlum</ammo>
-			<head>Pixie Hairpin +1</head>
+			<head>Hes. Crown +2</head>
 			<body>Wayfarer Robe</body>
-			<hands>Wayfarer Cuffs</hands>
-			<legs>Limbo Trousers</legs>
+			<hands>Anchor. Gloves +2</hands>
+			<legs>Hiza. Hizayoroi +2</legs> <!-- Save TP -->
 			<feet>Wayfarer Clogs</feet>
 			<neck>Baetyl Pendant</neck>
-			<waist>Eschan Stone</waist>
+			<waist augment="S9732114896294722659">Skrymir Cord +1</waist>
 			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
+			<ear2>Crematio Earring</ear2>
 			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
 			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
 			<back>Izdubar Mantle</back>
 		</set>
 		
- 
+		<set name="HeroicsMagical" baseset="Magical">
+		<body>Heidrek Harness</body>
+		<feet>Heidrek Boots</feet>
+		</set>
+		
+		<set name="DarkMATT" baseset ="Magical">
+		<head>Pixie Hairpin +1</head>
+		</set>
+		
+		<set name="HeroicsDarkMATT" baseset="DarkMATT">
+		<body>Heidrek Harness</body>
+		<feet>Heidrek Boots</feet>
+		</set>
 		
 		<set name="Nuke">
 			<ammo>Pemphredo Tathlum</ammo>
@@ -122,13 +138,13 @@
 			<feet>Herald's Gaiters</feet>
 		</set>
 		
-		<set name="Club">
-			<main>Blurred Rod +1</main>
-			<sub>Blurred Rod +1</sub>
-		</set>
+		<!-- <set name="Club"> -->
+			<!-- <main>Blurred Rod +1</main> -->
+			<!-- <sub>Blurred Rod +1</sub> -->
+		<!-- </set> -->
 		
-		<set name="Stave">
-			<main>Exalted Staff</main>
+		<set name="Staff">
+			<main>Malignance Pole</main>
 			<sub>Alber Strap</sub>
 		</set>
 		
@@ -299,6 +315,9 @@
 		</set>
 		<set name="CounterStaunch">
 			<ammo augment="S7978882493864118577">Staunch Tathlum +1</ammo>
+		</set>
+		<set name="mabskyr">
+			<waist augment="S9732114896294722659">Skrymir Cord +1</waist>
 		</set>
 	</sets>
 
@@ -936,6 +955,8 @@
 		<if ad_name="*helix"><equip set="Helix" /><gearlock length="1" /></if>
 		
 		<if ad_name="Occultation"><equip set="Occultation" /></if>
+		
+		<if ad_name="Addle"><equip set="Addle" /></if>
 
 		<if ad_name="Cure*|Cura*|White Wind|Restoral|Plenilune Embrace|Exuviation|Magic Fruit|Pollen|Wild Carrot|Healing Breeze"><equip set="Cure" /></if>
 		
@@ -964,15 +985,17 @@
 		<if advanced="$Heroics=1"> <!-- Checks to see if the player is in a heroics zone or not -->
         <equip set="HeroicsWS" /> <!-- Runs when player is in a heroics zone -->
 		<if ad_name="Victory Smite|Ascetic's Fury|Backhand Blow"><equip set="HeroicsCrit" /></if>
-		<if ad_name="Rock Crusher|Earth Crusher|Starburst|Sunburst|Cataclysm|Tartarus Torpor|Shining Strike|Seraph Strike|Flash Nova|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade"><equip set="HeroicsMagical" /></if>
+		<if ad_name="Rock Crusher|Earth Crusher|Starburst|Sunburst|Shining Strike|Seraph Strike|Flash Nova|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade"><equip set="HeroicsMagical" /></if>
 		<if ad_name="Shell Crusher"><equip set="FastCast" /></if>
+		<if ad_name="Tartarus Torpor|Cataclysm"><equip set="HeroicsDarkMATT" /></if>
         </if>
         
         <else>  <!-- Runs when player isn't in a heroics zone -->
         <equip set="WS" />
 		<if ad_name="Victory Smite|Ascetic's Fury|Backhand Blow"><equip set="Crit" /></if>
-		<if ad_name="Rock Crusher|Earth Crusher|Starburst|Sunburst|Cataclysm|Tartarus Torpor|Shining Strike|Seraph Strike|Flash Nova|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade"><equip set="Magical" /></if>
+		<if ad_name="Rock Crusher|Earth Crusher|Starburst|Sunburst|Shining Strike|Seraph Strike|Flash Nova|Burning Blade|Red Lotus Blade|Seraph Blade|Shining Blade|Uriel Blade|Sanguine Blade"><equip set="Magical" /></if>
 	   <if ad_name="Shell Crusher"><equip set="FastCast" /></if>
+	   <if ad_name="Tartarus Torpor|Cataclysm"><equip set="DarkMATT" /></if>
         </else>
 		
 	</weaponskill>

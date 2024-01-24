@@ -28,6 +28,10 @@
 		<!-- there's nothing in here, it's purely for making batch processes easier by giving a reference point! -->
 		</set>
 		
+		<set name="Addle" baseset="Debuff">
+		<feet>Muddle Pumps</feet>
+		</set>
+		
 		<set name="Occultation">
 			<head augment="S16771889851129639050">Volte Cap</head>
 			<body augment="S5030342454009611712">Volte Jupon</body>
@@ -234,7 +238,7 @@
 		
 		
 		<set name="Default">
-			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
+			<ammo augment="S266506787287656205">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +16 -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -252,7 +256,7 @@
 		</set>
 		
 		<set name="Main">
-			<ammo augment="S354469059707498253">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +20 -->
+			<ammo augment="S266506787287656205">Staunch Tathlum +1</ammo> <!-- Occ Inc Resist +16 -->
 			<head>Viti. Chapeau +3</head> <!-- DMG+32 -->
 			<body>Viti. Tabard +3</body> <!-- Crit DMG+12-->
 			<hands>Viti. Gloves +3</hands> <!-- TA+8 -->
@@ -1011,7 +1015,7 @@
 		<if ad_name="Utsusemi*"><equip set="Utsusemi" /></if>
 
 		<!-- enfeebling magic -->
-		<if ad_name="Inundation|Paralyze|Paralyze II|Slow|Slow II|Blind|Blind II|Distract|Distract II|Frazzle|Frazzle II|Addle|Gravity*"><equip set="Debuff" /></if>
+		<if ad_name="Inundation|Paralyze|Paralyze II|Slow|Slow II|Blind|Blind II|Distract|Distract II|Frazzle|Frazzle II|Gravity*"><equip set="Debuff" /></if>
 		
 		<if ad_name="Poison|Poison II">
 		<equip set="Poison" /><gearlock length="1" /><command delay="1000">/equipset 5</command> <!-- Force equip seems to fix issues --></if>
@@ -1020,6 +1024,8 @@
 		<if ad_name="*helix"><equip set="Helix" /><gearlock length="1" /></if>
 		
 		<if ad_name="Occultation"><equip set="Occultation" /></if>
+		
+		<if ad_name="Addle"><equip set="Addle" /></if>
 
 		<!-- heals -->
 		<if ad_name="Cure*|Cura*|White Wind|Restoral|Plenilune Embrace|Exuviation|Magic Fruit|Pollen|Wild Carrot|Healing Breeze"><equip set="Cure" /></if>

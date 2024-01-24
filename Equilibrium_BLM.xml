@@ -28,6 +28,10 @@
 		<!-- there's nothing in here, it's purely for making batch processes easier by giving a reference point! -->
 		</set>
 		
+		<set name="Addle" baseset="FastCast">
+		<feet>Muddle Pumps</feet>
+		</set>
+		
 		<set name="Occultation">
 			<head augment="S16771889851129639050">Volte Cap</head>
 			<body augment="S5030342454009611712">Volte Jupon</body>
@@ -850,6 +854,8 @@
 		<if ad_name="*helix"><equip set="Helix" /><gearlock length="1" /></if>
 		
 		<if ad_name="Occultation"><equip set="Occultation" /></if>
+		
+		<if ad_name="Addle"><equip set="Addle" /></if>
 
 		<if ad_name="Cure*|Cura*|White Wind|Restoral|Plenilune Embrace|Exuviation|Magic Fruit|Pollen|Wild Carrot|Healing Breeze"><equip set="Cure" /></if>
 		
