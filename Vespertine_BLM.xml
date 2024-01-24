@@ -100,7 +100,7 @@
 			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
 			<ring2>Shiva Ring +1</ring2>
 			<back>Toro Cape</back> <!-- MCRIT RATE +40% -->
-			<head>Ea Hat +1</head>
+			<head augment="S4542049086879310575">Ea Hat +1</head>
 			<body>Count's Garb</body>
 			<hands>Wicce Gloves +1</hands>
 			<legs>Arch. Tonban +3</legs>
@@ -116,7 +116,7 @@
 			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
 			<ring2>Shiva Ring +1</ring2>
 			<back>Toro Cape</back> <!-- MCRIT RATE +40% -->
-			<head>Ea Hat +1</head>
+			<head augment="S4542049086879310575">Ea Hat +1</head>
 			<body>Count's Garb</body>
 			<hands>Wicce Gloves +1</hands>
 			<legs>Arch. Tonban +3</legs>
@@ -219,6 +219,9 @@
 		</set>
 		<set name="mabcape">
 			<back augment="S7972869447897918563">Seshaw Cape +1</back>
+		</set>
+		<set name="EaMcrit">
+			<head augment="S4542049086879310575">Ea Hat +1</head>
 		</set>
 	</sets>
 

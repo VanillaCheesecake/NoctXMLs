@@ -132,7 +132,7 @@
 		
 		<set name="Nuke">
 			<ammo>Pemphredo Tathlum</ammo>
-			<head>Ea Hat +1</head>
+			<head augment="S9732114896294722659">Ea Hat +1</head>
 			<body>Count's Garb</body>
 			<hands>Volte Gloves</hands>
 			<legs>Volte Brais</legs>
@@ -175,18 +175,18 @@
 		
 		<set name="Magical">
 			<ammo>Pemphredo Tathlum</ammo>
-			<head>Atrophy Chapeau +3</head>
+			<head augment="S9732114896294722659">Ea Hat +1</head>
 			<body>Volte Doublet</body>
-			<hands>Volte Gloves</hands>
+			<hands>Jhakri Cuffs</hands>
 			<legs>Volte Brais</legs>
 			<feet>Vitiation Boots +3</feet>
 			<neck>Baetyl Pendant</neck>
-			<waist>Eschan Stone</waist>
+			<waist augment="S9732114896294722659">Skrymir Cord +1</waist> <!-- MAB MACC -->
 			<ear1>Friomisi Earring</ear1>
 			<ear2>Regal Earring</ear2>
 			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+48 -->
 			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+48 -->
-			<back>Izdubar Mantle</back>
+			<back>Izdubar Mantle</back> <!-- Save TP -->
 		</set>
 		
 		<set name="TH" baseset="Default" lock="true">
@@ -206,7 +206,6 @@
 			<ring2>Shiva Ring +1</ring2>
 			<ear1>Friomisi Earring</ear1>
 			<ear2>Regal Earring</ear2>
-			<back>Izdubar Mantle</back>
 			<waist>Eschan Stone</waist>	
 		</set>
 		
@@ -385,6 +384,9 @@
 		<set name="enhstikini">
 			<ring1 augment="S364304684895068482">Stikini Ring +1</ring1>
 			<ring2 augment="S364304684895068482">Stikini Ring +1</ring2>
+		</set>
+		<set name="EaNukeHat">
+			<head augment="S9732114896294722659">Ea Hat +1</head>
 		</set>
 		</sets>
 
