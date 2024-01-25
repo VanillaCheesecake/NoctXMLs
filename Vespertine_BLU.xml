@@ -31,7 +31,9 @@
 			<head>Eyepatch</head> 
 			<body>Councilor's Garb</body>
 			<hands>Fsh. Gloves</hands>
-			<legs>Morass Pants</legs>
+			<legs>Carmine Cuisses +1</legs>
+			<feet>Fisherman's Boots</feet>
+			<ring1>Shneddick Ring</ring1>
 		</set>
 		
 		<set name="Addle" baseset="FastCast">

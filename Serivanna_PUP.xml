@@ -35,7 +35,9 @@
 			<head>Eyepatch</head> 
 			<body>Councilor's Garb</body>
 			<hands>Fsh. Gloves</hands>
-			<legs>Morass Pants</legs>
+			<legs>Pink Subligar</legs>
+			<feet>Hermes' Sandals</feet>
+			<ring1>Shneddick Ring</ring1>
 		</set>
 		
 		<set name="Addle" baseset="FastCast">
