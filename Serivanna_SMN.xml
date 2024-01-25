@@ -20,7 +20,7 @@
 	</init>
 	<sets>
 	
-		<set name="Movement" baseset="Default">
+		<set name="Movement">
 			<feet>Herald's Gaiters</feet>
 			<ring1>Shneddick Ring</ring1>
 		</set>
@@ -31,6 +31,13 @@
 		
 		<set name="BREAK POINT">
 		<!-- there's nothing in here, it's purely for making batch processes easier by giving a reference point! -->
+		</set>
+		
+		<set name="Idletown" baseset="Movement">
+			<head>Eyepatch</head> 
+			<body>Councilor's Garb</body>
+			<hands>Fsh. Gloves</hands>
+			<legs>Morass Pants</legs>
 		</set>
 		
 		<set name="Addle" baseset="FastCast">
@@ -779,9 +786,18 @@
 	<setvar name="Heroics" value="0" />
 	</else>
 	
+	<if e_area="Heaven*|Metalworks|Chateau*|Ru'Lude*|Nashmau|Tavnazian Safehold|Port*|Bastok*|Windurst*|*San d'Oria|Southern San d'Oria*|Bastok Markets*|Windurst Waters*|*Jeuno|*Whitegate|*Adoulin|Selbina|Mhaura|Norg|Rabao|Kazham|*Memorial Library|Leafallia"> <!-- Town zone Check -->
+	<setvar name="Town" value="1" />
+	</if>
+	
+	<else>
+	<setvar name="Town" value="0" />
+	</else>
+	
 <if p_status="engaged"><equip set="Default" /></if> <!--Forces idle/DT gear upon engagement-->
 		
-		<equip set="Default" /> <!--Idle defensive gear when standing still-->
+		<if advanced="$Town=0"><equip set="Default" /></if> <!--Idle defensive gear when standing still-->
+		<else><equip set="Idletown" /></else>
 		
 		
 		<if p_ismoving="True"> <!--Checks for movement since last outgoing 0x15(position update packet)-->
