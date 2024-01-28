@@ -89,6 +89,14 @@
 			<waist>Chaac Belt</waist>
 		</set>
 		
+		<set name="Migawari" baseset="FastCast">
+		<neck>Henic Torque</neck>
+		<ring1>Haverton Ring</ring1>
+		<ring2>Stikini Ring +1</ring2>
+		<ear1>Hnoss Earring</ear1>
+		<ear2>Stealth Earring</ear2>
+		</set>
+		
 		<set name="FastCast"> <!-- Some jobs use Tempus Fugit +1 in the belt slot instead -->
 			<ammo>Platinum Bullet</ammo>
 			<head>Volte Cap</head>
@@ -874,6 +882,8 @@
 	<!-- <command delay="4000">/echo Heroics zone active!</command> -->
 	<!-- </if> -->
 	
+
+	
 	</idlegear>
 
 <premagic>
@@ -924,6 +934,9 @@
 		
 		<!-- utsusemi -->
 		<if ad_name="Utsusemi*"><equip set="Utsusemi" /></if>
+		
+		<!-- migawari -->
+		<if ad_name="Migawari*"><equip set="Migawari" /></if>
 		
 		<!-- enfeebling ninjtsu -->
 		<if ad_name="Kurayami*|Hojo*|Dokumori*|Jubaku*|Aisha*|Yurin*"><equip set="Enfeeble" /></if>

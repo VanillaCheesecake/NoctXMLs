@@ -307,7 +307,7 @@
 		<set name="Debuff" baseset="FastCast">
 		<!-- <ammo>Crepuscular Pebble</ammo> -->
 		<ammo>Regal Gem</ammo>
-		<head>Viti. Chapeau +3</head>
+		<head>Viti. Chapeau +1</head>
 		<ear1>Snotra Earring</ear1>
 		<neck>Dls. Torque +2</neck> <!-- Unaugable -->
 		<hands>Leth. Gantherots +1</hands> <!-- Occ Max -->
@@ -1037,9 +1037,12 @@
 		
 		<!-- utsusemi -->
 		<if ad_name="Utsusemi*"><equip set="Utsusemi" /></if>
+		
+		<!-- migawari -->
+		<if ad_name="Migawari*"><equip set="Migawari" /></if>
 
 		<!-- enfeebling magic -->
-		<if ad_name="Inundation|Paralyze|Paralyze II|Slow|Slow II|Blind|Blind II|Distract|Distract II|Frazzle|Frazzle II|Gravity*"><equip set="Debuff" /></if>
+		<if ad_name="Inundation|Paralyze|Paralyze II|Slow|Slow II|Blind|Blind II|Distract|Distract II|Frazzle|Frazzle II|Gravity*|Sleep*|Dia*|Bio*|Break|Silence"><equip set="Debuff" /></if>
 		
 		<if ad_name="Poison|Poison II">
 		<equip set="Poison" /><gearlock length="1" /><command delay="1000">/equipset 5</command> <!-- Force equip seems to fix issues --></if>

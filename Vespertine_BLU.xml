@@ -859,6 +859,9 @@
 		
 		<!-- utsusemi -->
 		<if ad_name="Utsusemi*"><equip set="Utsusemi" /></if>
+		
+		<!-- migawari -->
+		<if ad_name="Migawari*"><equip set="Migawari" /></if>
 
 		<!-- special cases -->
 		<if ad_name="*helix"><equip set="Helix" /><gearlock length="1" /></if>

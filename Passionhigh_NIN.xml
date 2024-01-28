@@ -925,6 +925,9 @@
 		<!-- utsusemi -->
 		<if ad_name="Utsusemi*"><equip set="Utsusemi" /></if>
 		
+		<!-- migawari -->
+		<if ad_name="Migawari*"><equip set="Migawari" /></if>
+		
 		<!-- enfeebling ninjtsu -->
 		<if ad_name="Kurayami*|Hojo*|Dokumori*|Jubaku*|Aisha*|Yurin*"><equip set="Enfeeble" /></if>
 

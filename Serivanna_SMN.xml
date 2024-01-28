@@ -945,6 +945,9 @@
 		
 		<!-- utsusemi -->
 		<if ad_name="Utsusemi*"><equip set="Utsusemi" /></if>
+		
+		<!-- migawari -->
+		<if ad_name="Migawari*"><equip set="Migawari" /></if>
 
 
 		<!-- special cases -->
