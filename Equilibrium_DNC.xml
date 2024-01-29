@@ -66,71 +66,71 @@
 		</set>
 	
 		<set name="Crit" baseset="WS">
-			<ammo>Crepuscular Pebble</ammo>
-			<head>Maculele Tiara</head>
-			<body>Meg. Cuirie +1</body>
-			<feet>Heidrek Boots</feet>
+			<ammo>Crepuscular Pebble</ammo> <!-- TA -->
+			<head>Maculele Tiara</head> <!-- Crit Rate -->
+			<body>Meg. Cuirie +1</body> <!-- TA -->
+			<feet>Heidrek Boots</feet> <!-- TA -->
 			
-			<waist>Fotia Belt</waist>
-			<neck>Fotia Gorget</neck>
-			<ear1>Odr Earring</ear1>
-			<ear2>Tati Earring +1</ear2>
-			<ring1>Karieyh Ring</ring1>
-			<ring2>Ilabrat Ring</ring2>
-			<back>Senuna's Mantle</back> 
+			<waist>Fotia Belt</waist> <!-- DMG -->
+			<neck>Fotia Gorget</neck> <!-- DMG -->
+			<ear1>Odr Earring</ear1> <!-- Crit Rate -->
+			<ear2>Tati Earring +1</ear2> <!-- Crit Damage -->
+			<ring1>Karieyh Ring</ring1> <!--TA -->
+			<ring2>Ilabrat Ring</ring2>  <!--TA+4, Crit DMG+12-->
+			<back>Senuna's Mantle</back>   <!--Crit Rate-->
 		</set>
 		
 		<set name="FrenzyCrit" baseset="Crit">
-			<waist>Light Belt</waist>
+			<waist>Light Belt</waist> <!--Save TP-->
 		</set>
 	
 		<set name="FTP" baseset="WS">
-			<ammo>Crepuscular Pebble</ammo>
-			<waist>Fotia Belt</waist>
-			<neck>Fotia Gorget</neck>
-			<ear2>Balder Earring +1</ear2>
+			<ammo>Crepuscular Pebble</ammo> <!-- TA -->
+			<waist>Fotia Belt</waist> <!-- DMG -->
+			<neck>Fotia Gorget</neck> <!-- DMG -->
+			<ear2>Balder Earring +1</ear2> <!-- TA -->
 		</set>
 		
 		<set name="FrenzyFTP" baseset="FTP">
-			<feet>Meg. Jam. +1</feet>
+			<feet>Meg. Jam. +1</feet> <!-- STP SB -->
 		</set>
 		
 		<set name="WS" baseset="Main">
-			<ammo>Cheruski Needle</ammo>
-			<head>Horos Tiara +3</head>
-			<body>Horos Casaque +3</body>
-			<hands>Meg. Gloves +2</hands>
-			<legs>Horos Tights +3</legs>
-			<feet>Heidrek Boots</feet>
+			<ammo>Cheruski Needle</ammo> <!-- TP Bonus -->
+			<head>Horos Tiara +3</head> <!-- TP Bonus -->
+			<body>Horos Casaque +3</body> <!-- TP Bonus -->
+			<hands>Meg. Gloves +2</hands> <!-- TA -->
+			<legs>Horos Tights +3</legs> <!-- TA -->
+			<feet>Heidrek Boots</feet> <!-- TA -->
 			
-			<waist>Prosilio Belt +1</waist>
-			<neck>Asperity Necklace</neck>
-			<ring1>Karieyh Ring</ring1>
+			<waist>Prosilio Belt +1</waist> <!-- TA -->
+			<neck>Asperity Necklace</neck> <!-- TA -->
+			<ring1>Karieyh Ring</ring1> <!-- TA -->
 			<ring2 augment="S2673698531744418759">Dark Ring</ring2>
-			<back>Laic Mantle</back> 
+			<back>Laic Mantle</back> <!-- TA -->
 			<ear1>M. Slime Earring</ear1>
-			<ear2>Ishvara Earring</ear2>
+			<ear2>Ishvara Earring</ear2> <!-- STB SB -->
 		</set>
 			
-		<set name="Aeolian">
+		<set name="Aeolian"> <!-- Assume all is MAB/MACC Unless specified. -->
 			<ammo>Pemphredo Tathlum</ammo>
 			
 			<head>Herculean Helm</head>
 			<body>Rawhide Vest</body>
 			<hands>Nilas Gloves</hands>
 			<legs>Shned. Tights +1</legs>
-			<!-- <feet>Adhe. Gamashes +1</feet> -->
-			<feet>Heidrek Boots</feet>
+			<!-- <feet>Adhe. Gamashes +1</feet> --> <!-- Potential substitution for Heidrek -->
+			<feet>Heidrek Boots</feet> <!-- Can't augment -->
 			<neck>Baetyl Pendant</neck>
 			<waist>Skrymir Cord +1</waist>
 			<ear1>Crematio Earring</ear1>
 			<ear2>Friomisi Earring</ear2>
-			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
-			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
-			<back>Izdubar Mantle</back>
+			<ring1>Shiva Ring +1</ring1>
+			<ring2>Shiva Ring +1</ring2> 
+			<back>Izdubar Mantle</back> <!-- Save TP -->
 		</set>
 		
-		<set name="Nuke">
+		<set name="Nuke"> <!-- Assume all is MAB/MACC Unless specified. -->
 			<ammo>Pemphredo Tathlum</ammo>
 			
 			<head>Pixie Hairpin +1</head>
@@ -140,8 +140,8 @@
 			<waist>Eschan Stone</waist>
 			<ear1>Hecate's Earring</ear1>
 			<ear2>Friomisi Earring</ear2>
-			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
-			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
+			<ring1>Shiva Ring +1</ring1>
+			<ring2>Shiva Ring +1</ring2> 
 			<back>Izdubar Mantle</back>
 		</set>
 		
@@ -166,19 +166,19 @@
 		</set>
 		
 		<set name="Main">
-			<neck>Asperity Necklace</neck>
-			<waist>Engraved Belt</waist>  <!--+3-->
-			<ammo>Crepuscular Pebble</ammo>
-			<head>Maculele Tiara</head>
-			<body>Meg. Cuirie +1</body>
-			<hands>Mummu Wrists +2</hands>
-			<legs>Maxixi Tights +3</legs> <!--+3-->
-			<feet>Horos T. Shoes +2</feet>
-			<ear1>Odr Earring</ear1>
-			<ear2>Tati Earring +1</ear2>
-			<ring1>Hetairoi Ring</ring1>
-			<ring2>Ilabrat Ring</ring2>
-			<back>Senuna's Mantle</back> 
+			<neck>Asperity Necklace</neck> <!-- TA -->
+			<waist>Engraved Belt</waist>  <!--Crit Dmg-->
+			<ammo>Crepuscular Pebble</ammo> <!-- TA -->
+			<head>Maculele Tiara</head> <!-- Crit Rate -->
+			<body>Meg. Cuirie +1</body> <!-- TA -->
+			<hands>Mummu Wrists +2</hands> <!-- STP SB -->
+			<legs>Maxixi Tights +3</legs> <!--Crit DMG-->
+			<feet>Horos T. Shoes +2</feet> <!-- TA -->
+			<ear1>Odr Earring</ear1> <!-- Crit Rate -->
+			<ear2>Tati Earring +1</ear2> <!-- Crit DMG -->
+			<ring1>Hetairoi Ring</ring1> <!-- Crit DMG -->
+			<ring2>Ilabrat Ring</ring2> <!-- TA+4, Crit DMG +12 -->
+			<back>Senuna's Mantle</back>  <!-- Crit Rate -->
 		</set>
 		
 		<set name="TH" baseset="Default" lock="true">
@@ -191,7 +191,7 @@
 			<ring1>Gorney Ring</ring1>
 		</set>
 		
-		<set name="DarkNuke" baseset="Nuke">
+		<set name="DarkNuke" baseset="Nuke"> <!-- Assume MAB -->
 			<head>Pixie Hairpin +1</head>
 			<neck>Baetyl Pendant</neck>
 			<ring1>Shiva Ring +1</ring1>
@@ -244,14 +244,14 @@
 		<back>Senuna's Mantle</back>
 		</set>
 
-		<set name="Waltz">
+		<set name="Waltz"> <!-- All Waltz Potency Augs -->
 		<ammo>Yamarang</ammo>
 		<head>Horos Tiara +2</head>
 		<body>Maxixi Casaque +3</body>
 		<feet>Maxixi Toe shoes +3</feet>
 		<legs>Maxixi Tights +2</legs>
 		<hands>Hegira Wristbands</hands>
-		<neck augment="S366022698028268522">Etoile Gorget +2</neck>
+		<neck augment="S366022698028268522">Etoile Gorget +2</neck> <!-- Waltz potency version -->
 		<ear1>Sjofn Earring</ear1>
 		<ear2>Roundel Earring</ear2>
 		<back>Toetapper Mantle</back>
@@ -271,7 +271,7 @@
 		<head>Maxixi Tiara +3</head>
 		</set>
 		
-		<set name="Climactic"> <!-- It's got pure charisma, baby! -->
+		<set name="Climactic"> <!-- Pure CHR augments -->
 		<ammo>Tsar's Egg</ammo>
 		<head>Maculele Tiara +1</head>
 		<body>Ashera Harness</body>
