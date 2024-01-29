@@ -288,6 +288,10 @@
 		<back>Aisance Mantle +1</back>
 		</set>
 		
+		<set name="Striking" baseset="Climactic">
+		<body>Macu. Casaque +1</body>
+		</set>
+		
 		<set name="NFR">
 		<body>Horos Casaque +3</body>
 		</set>
@@ -953,6 +957,7 @@
 		<if ad_name="Chocobo Jig*|Spectral Jig"><equip set="Jig" /></if>
 		<if ad_name="*step"><equip set="Step" /></if>
 		<if ad_name="Climactic*"><equip set ="Climactic" /></if>
+		<if ad_name="Striking Flourish"><equip set ="Striking" /></if>
 		<if ad_name="No Foot Rise"><equip set="NFR" /></if>
 		<if ad_name="Reverse Flourish"><equip set="Reverse" /></if>
     </jobability>
