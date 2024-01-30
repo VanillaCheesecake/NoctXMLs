@@ -61,7 +61,6 @@
 		</set>
 
 		<set name="Movement">
-			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo> <!-- Refresh +80 -->
 			<head>Valorous Mask</head>
 			<feet>Hermes' Sandals</feet>
 			<body>Makora Meikogai</body>
@@ -69,13 +68,16 @@
 		</set>
 
 		<set name="Crit" baseset="WS">
-			<neck>Asperity Necklace</neck>
-			<ear1>Telos Earring</ear1>
-			<ear2 augment="S353610053140898233">Mache Earring +1</ear2>
+			<neck>Caro Necklace</neck>
+			<legs>Agoge Cuisses +3</legs>
 			<feet>Boii Calligae +1</feet>
 			<ring1>Regal Ring</ring1>
-			<ring2 >Hetairoi Ring</ring2>
+			<ring2>Hetairoi Ring</ring2>
 			<back>Laic Mantle</back>
+		</set>
+		
+		<set name="HeroicsCrit" baseset="Crit">
+		<feet>Hervor Sollerets</feet>
 		</set>
 	
 		<set name="FastCast"> <!-- Some jobs use Tempus Fugit +1 in the belt slot instead -->
@@ -95,8 +97,14 @@
 		</set>
 	
 		<set name="FTP" baseset="WS">
+			<legs>Sulev. Cuisses +2</legs>
 			<waist>Fotia Belt</waist>
 			<neck>Fotia Gorget</neck>
+			<ring2>Regal Ring</ring2>
+		</set>
+		
+		<set name="HeroicsFTP" baseset="FTP">
+		<feet>Hervor Sollerets</feet>
 		</set>
 		
 		<set name="WS">
@@ -104,20 +112,24 @@
 		
 			<head>Agoge Mask +3</head>
 			<body>Pumm. Lorica +3</body>
-			<hands>Odyssean Gauntlets</hands>
+			<hands augment="S270071664539046288">Odyssean Gauntlets</hands>
 			<legs>Agoge Cuisses +3</legs>
-			<feet>Pumm. Calligae +3</feet>
+			<feet>Diama. Sollerets</feet>
 			<waist>Metalsinger Belt</waist>
 			<neck>Asperity Necklace</neck>
-			<ring1>Regal Ring</ring1>
-			<ring2>Niqmaddu Ring</ring2>
+			<ring1>Karieyh Ring</ring1>
+			<ring2>Dark Ring</ring2>
 			<back>Laic Mantle</back> 
-			<ear1 augment="S94147119699362192">Mache Earring +1</ear1> <!-- TA 8 -->
-			<ear2>M. Slime Earring</ear2>
+			<ear1>Thrud Earring</ear1> <!-- TA 16 -->
+			<ear2>Ishvara Earring</ear2>  <!-- TA 16 -->
+		</set>
+		
+		<set name="HeroicsWS" baseset="WS">
+		<feet>Hervor Sollerets</feet>
 		</set>
 		
 		<set name="Default">
-			<ammo augment="S7978882493864118577">Staunch Tathlum +1</ammo>
+			<ammo augment="S266506787287656205">Staunch Tathlum +1</ammo> <!-- Occ Inc -->
 			
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
@@ -126,7 +138,7 @@
 			<feet>Volte Boots</feet>
 			
 			<neck>Warder's Charm +1</neck>
-			<waist>Resolute Belt</waist>
+			<waist>Flume Belt +1</waist>
 			<ear1>Hearty Earring</ear1>
 			<ear2>Sanare Earring</ear2>
 			<ring1>Shadow Ring</ring1>
@@ -135,25 +147,25 @@
 		</set>
 		
 		<set name="DefaultMask" baseset="Default">
-			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo> <!-- Refresh +80 -->
+			<ammo augment="S266506787287656205">Staunch Tathlum +1</ammo> <!-- Occ Inc -->
 			<head>Valorous Mask</head>
 			<body>Makora Meikogai</body>
 		</set>
 		
 		<set name="Main">
-			<ammo>Crepuscular Pebble</ammo>
-			<head>Boii Mask +1</head>
+			<ammo augment="S6174968704004114377">Yetshila +1</ammo>
+			<head>Quiahuiz Helm</head>
 			<body>Volte Haubert</body>
-			<hands>Iktomi Dastanas</hands>
-			<legs>Agoge Cuisses +3</legs>
-			<feet>Boii Calligae +1</feet>
-			<neck>Asperity Necklace</neck>
-			<waist>Ioskeha Belt</waist>
+			<hands>Iktomi Dastanas</hands> <!-- DA DMG -->
+			<legs>Agoge Cuisses +2</legs> <!-- DA DMG -->
+			<feet>Thereoid Greaves</feet>
+			<neck>Portus Collar</neck>
+			<waist>Ioskeha Belt +1</waist>
 			<ear1>Cessance Earring</ear1>
 			<ear2>Brutal Earring</ear2>
-			<ring1>Regal Ring</ring1>
+			<ring1>Ambuscade Ring</ring1>
 			<ring2>Hetairoi Ring</ring2>
-			<back>Cichol's Mantle</back>
+			<back>Cichol's Mantle</back> <!-- DA DMG -->
 		</set>
 		
 		<set name="TH" baseset="Default" lock="true">
@@ -178,19 +190,43 @@
 		</set>
 	
 		<set name="Magical">
-			<ammo>Pemphredo Tathlum</ammo>
+			<ammo>Knobkierrie</ammo>
 			<head>Agoge Mask +3</head>
 			<body>Pumm. Lorica +3</body>
-			<hands>Agoge Mufflers +3</hands>
+			<hands augment="S9732114896294722659">Odyssean Gauntlets</hands>
 			<legs>Augury Cuisses +1</legs>
 			<feet>Pumm. Calligae +2</feet>
 			<neck>Baetyl Pendant</neck>
-			<waist>Eschan Stone</waist>
-			<ear1>Hecate's Earring</ear1>
+			<waist augment="S9732114896294722659">Skrymir Cord +1</waist>
+			<ear1>Crematio Earring</ear1>
 			<ear2>Friomisi Earring</ear2>
-			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+40 -->
-			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+40 -->
+			<ring1>Shiva Ring +1</ring1> <!-- MACC/MAB+48 -->
+			<ring2>Shiva Ring +1</ring2> <!-- MACC/MAB+48 -->
 			<back>Izdubar Mantle</back>
+		</set>
+		
+		<set name="HeroicsMagical" baseset="Magical">
+		<feet>Hervor Sollerets</feet>
+		</set>
+		
+		<set name="DarkMATT" baseset="Magical">
+		<head>Pixie Hairpin +1</head>
+		</set>
+		
+		<set name="HeroicsDarkMATT" baseset="Magical">
+		<head>Pixie Hairpin +1</head>
+		<feet>Hervor Sollerets</feet>
+		</set>
+		
+		<set name="LightMATT" baseset="Magical">
+		<ring1>Weather. Ring</ring1>
+		<ring2>Weather. Ring +1</ring2>
+		</set>
+		
+		<set name="HeroicsLightMATT" baseset="Magical">
+		<ring1>Weather. Ring</ring1>
+		<ring2>Weather. Ring +1</ring2>
+		<feet>Hervor Sollerets</feet>
 		</set>
 		
 		<set name="Nuke">
@@ -244,6 +280,15 @@
 		<hands>Boii Mufflers +1</hands>
 		</set>
 		
+		<set name="Defender">
+		<hands>Agoge Mufflers +3</hands>
+		</set>
+		
+		<set name="Tomahawk">
+		<ammo>Thr. Tomahawk</ammo>
+		<feet>Agoge Calligae +3</feet>
+		</set>
+		
 		<set name="Cure" baseset="FastCast"> <!-- Do not use this set if WHM -->
 			<neck>Phalaina Locket</neck>
 			<ear1>Mendi. Earring</ear1>
@@ -289,6 +334,21 @@
 			<ear1 augment="S94147119699362192">Mache Earring +1</ear1> <!-- TA 8 -->
 		</set>
 		
+		<set name="CritRateYetshila">
+			<ammo augment="S6174968704004114377">Yetshila +1</ammo>
+		</set>
+		<set name="REFRESHSTAUNCH">
+			<ammo augment="S16772103212865039050">Staunch Tathlum +1</ammo>
+		</set>
+		<set name="OCCSTAUNCH">
+			<ammo augment="S266506787287656205">Staunch Tathlum +1</ammo>
+		</set>
+		<set name="TAOdyyssean">
+			<hands augment="S270071664539046288">Odyssean Gauntlets</hands>
+		</set>
+		<set name="MABOdyssean">
+			<hands augment="S9732114896294722659">Odyssean Gauntlets</hands>
+		</set>
 	</sets>
 
 	<variables>
@@ -949,15 +1009,35 @@
 		<if ad_name="Berserk"><equip set="Berserk" /></if>
 		<if ad_name="Blood Rage"><equip set="Blood Rage" /></if>
 		<if ad_name="Restraint"><equip set="Restraint" /></if>
+		<if ad_name="Defender"><equip set="Defender" /></if>
+		<if ad_name="Tomahawk"><equip set="Tomahawk" /></if>
     </jobability>
 
 
 	<weaponskill>
-		<equip set="WS" />
-		<if ad_name="Ukko's Fury|Raging Rush|Keen Edge"><equip set="Crit" /></if>
-		<if ad_name="Resolution|Ruinator|Decimation|Rampage"><equip set="FTP" /></if>
-		<if ad_name="Cloudsplitter|Uriel Blade|Aeolian Edge|Earth Crusher|Tartarus Torpor|Primal Rend|Red Lotus Blade|Burning Blade|Shining Blade|Seraph Blade|Tartarus Torpor|Earth Crusher|Omniscience|Rock Crusher|Starburst|Sunburst|Seraph Blade|Shining Strike|Red Lotus Blade|Sanguien Blade|Burning Blade|Flash Nova|Shining Blade|Seraph Strike|Spirits Within|Herculean Slash"><equip set="Magical" /></if>
+	
+	<if advanced="$Heroics=1"> <!-- Checks to see if the player is in a heroics zone or not -->
+	<equip set="HeroicsWS" /> <!-- Runs when player is in a heroics zone -->
+		<if ad_name="Ukko's Fury|Raging Rush|Keen Edge|Eviseration"><equip set="HeroicsCrit" /></if>
+		<if ad_name="Resolution|Ruinator|Decimation|Rampage"><equip set="HeroicsFTP" /></if>
+		<if ad_name="Cloudsplitter|Aeolian Edge|Earth Crusher|Red Lotus Blade|Burning Blade|Earth Crusher
+		|Omniscience|Rock Crusher|Starburst|Sunburst|Red Lotus Blade|Burning Blade|Spirits Within|Herculean Slash|Gust Slash"><equip set="HeroicsMagical" /></if>
+		<if ad_name="Primal Rend|Shining Blade|Seraph Blade|Uriel Blade|Shining Strike|Seraph Strike|Flash Nova"><equip set="HeroicsLightMATT" /></if>
+		<if ad_name="Tartarus Torpor|Cataclysm|Sanguine Blade"><equip set="HeroicsDarkMATT" /></if>
 		<if ad_name="Shell Crusher|Weapon Break|Armor Break"><equip set="FastCast" /></if>
+	</if>
+	
+	<else>
+	<equip set="WS" />
+		<if ad_name="Ukko's Fury|Raging Rush|Keen Edge|Evisceration"><equip set="Crit" /></if>
+		<if ad_name="Resolution|Ruinator|Decimation|Rampage"><equip set="FTP" /></if>
+		<if ad_name="Cloudsplitter|Aeolian Edge|Earth Crusher|Red Lotus Blade|Burning Blade|Earth Crusher
+		|Omniscience|Rock Crusher|Starburst|Sunburst|Red Lotus Blade|Burning Blade|Spirits Within|Herculean Slash|Gust Slash"><equip set="Magical" /></if>
+		<if ad_name="Primal Rend|Shining Blade|Seraph Blade|Uriel Blade|Shining Strike|Seraph Strike|Flash Nova"><equip set="LightMATT" /></if>
+		<if ad_name="Tartarus Torpor|Cataclysm|Sanguine Blade"><equip set="DarkMATT" /></if>
+		<if ad_name="Shell Crusher|Weapon Break|Armor Break"><equip set="FastCast" /></if>
+	</else>
+	
 	</weaponskill>
 	
 	<ability>
