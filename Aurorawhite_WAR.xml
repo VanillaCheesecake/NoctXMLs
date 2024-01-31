@@ -276,8 +276,20 @@
 		<body>Boii Lorica +1</body>
 		</set>
 		
-		<set name="Restraint">
-		<hands>Boii Mufflers +1</hands>
+		<set name="Restraint"> <!-- All STR+32 -->
+			<ammo augment="S6377264750438414848">Aurgelmir Orb +1</ammo>
+			<head augment="S6377264750438414848">Flam. Zucchetto +2</head>
+			<body augment="S6377264750438414848">Flamma Korazin +2</body>
+			<hands>Boii Mufflers +1</hands>
+			<legs augment="S6377264750438414848">Flamma Dirs +2</legs>
+			<feet augment="S6377264750438414848">Flam. Gambieras +2</feet>
+			<neck augment="S6377264750438414848">Ire Torque +1</neck>
+			<waist augment="S6377264750438414848">Beir Belt +1</waist>
+			<ear1 augment="S6377264750438414848">Vulcan's Pearl</ear1>
+			<ear2 augment="S6377264750438414848">Vulcan's Pearl</ear2>
+			<ring1 augment="S6377264750438414848">Ifrit Ring +1</ring1>
+			<ring2 augment="S6377264750438414848">Ifrit Ring +1</ring2>
+			<back augment="S6377264750438414848">Fortis Mantle</back>
 		</set>
 		
 		<set name="Defender">
@@ -349,6 +361,7 @@
 		<set name="MABOdyssean">
 			<hands augment="S9732114896294722659">Odyssean Gauntlets</hands>
 		</set>
+
 	</sets>
 
 	<variables>
@@ -1018,23 +1031,23 @@
 	
 	<if advanced="$Heroics=1"> <!-- Checks to see if the player is in a heroics zone or not -->
 	<equip set="HeroicsWS" /> <!-- Runs when player is in a heroics zone -->
-		<if ad_name="Ukko's Fury|Raging Rush|Keen Edge|Eviseration"><equip set="HeroicsCrit" /></if>
-		<if ad_name="Resolution|Ruinator|Decimation|Rampage"><equip set="HeroicsFTP" /></if>
+		<if ad_name="Ukko's Fury|Raging Rush|Keen Edge|Evisceration|Hexa Strike|Vorpal Blade|Vorpal Scythe|Vorpal Thrust"><equip set="HeroicsCrit" /></if>
+		<if ad_name="Resolution|Ruinator|Decimation|Rampage|Stardiver|Upheaval|Exenterator|Requiescat|Entropy|Penta Thrust|Realmrazer"><equip set="HeroicsFTP" /></if>
 		<if ad_name="Cloudsplitter|Aeolian Edge|Earth Crusher|Red Lotus Blade|Burning Blade|Earth Crusher
-		|Omniscience|Rock Crusher|Starburst|Sunburst|Red Lotus Blade|Burning Blade|Spirits Within|Herculean Slash|Gust Slash"><equip set="HeroicsMagical" /></if>
+		|Omniscience|Rock Crusher|Starburst|Sunburst|Red Lotus Blade|Burning Blade|Spirits Within|Herculean Slash|Gust Slash|Thunder Thrust|Raiden Thrust|Frostbite|Freezebite"><equip set="HeroicsMagical" /></if>
 		<if ad_name="Primal Rend|Shining Blade|Seraph Blade|Uriel Blade|Shining Strike|Seraph Strike|Flash Nova"><equip set="HeroicsLightMATT" /></if>
-		<if ad_name="Tartarus Torpor|Cataclysm|Sanguine Blade"><equip set="HeroicsDarkMATT" /></if>
+		<if ad_name="Tartarus Torpor|Cataclysm|Sanguine Blade|Shadow of Death|Dark Harvest|Infernal Scythe"><equip set="HeroicsDarkMATT" /></if>
 		<if ad_name="Shell Crusher|Weapon Break|Armor Break"><equip set="FastCast" /></if>
 	</if>
 	
 	<else>
 	<equip set="WS" />
-		<if ad_name="Ukko's Fury|Raging Rush|Keen Edge|Evisceration"><equip set="Crit" /></if>
-		<if ad_name="Resolution|Ruinator|Decimation|Rampage"><equip set="FTP" /></if>
+		<if ad_name="Ukko's Fury|Raging Rush|Keen Edge|Evisceration|Hexa Strike|Vorpal Blade|Vorpal Scythe|Vorpal Thrust"><equip set="Crit" /></if>
+		<if ad_name="Resolution|Ruinator|Decimation|Rampage|Stardiver|Upheaval|Exenterator|Requiescat|Entropy|Penta Thrust|Realmrazer"><equip set="FTP" /></if>
 		<if ad_name="Cloudsplitter|Aeolian Edge|Earth Crusher|Red Lotus Blade|Burning Blade|Earth Crusher
-		|Omniscience|Rock Crusher|Starburst|Sunburst|Red Lotus Blade|Burning Blade|Spirits Within|Herculean Slash|Gust Slash"><equip set="Magical" /></if>
+		|Omniscience|Rock Crusher|Starburst|Sunburst|Red Lotus Blade|Burning Blade|Spirits Within|Herculean Slash|Gust Slash|Thunder Thrust|Raiden Thrust|Frostbite|Freezebite"><equip set="Magical" /></if>
 		<if ad_name="Primal Rend|Shining Blade|Seraph Blade|Uriel Blade|Shining Strike|Seraph Strike|Flash Nova"><equip set="LightMATT" /></if>
-		<if ad_name="Tartarus Torpor|Cataclysm|Sanguine Blade"><equip set="DarkMATT" /></if>
+		<if ad_name="Tartarus Torpor|Cataclysm|Sanguine Blade|Shadow of Death|Dark Harvest|Infernal Scythe"><equip set="DarkMATT" /></if>
 		<if ad_name="Shell Crusher|Weapon Break|Armor Break"><equip set="FastCast" /></if>
 	</else>
 	
