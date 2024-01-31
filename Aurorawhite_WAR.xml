@@ -168,7 +168,7 @@
 			<back>Cichol's Mantle</back> <!-- DA DMG -->
 		</set>
 		
-		<set name="TH" baseset="Default" lock="true">
+		<set name="TH" baseset="FastCast" lock="true">
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>
@@ -195,7 +195,8 @@
 			<body>Pumm. Lorica +3</body>
 			<hands augment="S9732114896294722659">Odyssean Gauntlets</hands>
 			<legs>Augury Cuisses +1</legs>
-			<feet>Pumm. Calligae +2</feet>
+			<!-- <feet>Pumm. Calligae +2</feet> -->
+			<feet>Hervor Sollerets</feet>
 			<neck>Baetyl Pendant</neck>
 			<waist augment="S9732114896294722659">Skrymir Cord +1</waist>
 			<ear1>Crematio Earring</ear1>
