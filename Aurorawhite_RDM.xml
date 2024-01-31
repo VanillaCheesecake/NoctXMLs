@@ -198,7 +198,7 @@
 			<back>Izdubar Mantle</back>
 		</set>
 		
-		<set name="TH" baseset="Default" lock="true">
+		<set name="TH" baseset="FastCast" lock="true">
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>

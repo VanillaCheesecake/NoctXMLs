@@ -181,7 +181,7 @@
 			<back>Senuna's Mantle</back>  <!-- Crit Rate -->
 		</set>
 		
-		<set name="TH" baseset="Default" lock="true">
+		<set name="TH" baseset="FastCast" lock="true">
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<hands>Volte Bracers</hands>
@@ -236,8 +236,6 @@
 			<ring2>San d'Orian Ring</ring2>
 			<back>Wizard's Mantle</back>
 		</set>
-		
-		
 		
 		<set name="Samba">
 		<head>Maxixi Tiara +1</head>

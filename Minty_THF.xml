@@ -165,7 +165,7 @@
 			<back>Shaper's Shawl</back>
 		</set>
 		
-		<set name="TH" baseset="Default" lock="true">
+		<set name="TH" baseset="FastCast" lock="true">
 			<head>Volte Cap</head>
 			<body>Volte Jupon</body>
 			<legs>Volte Hose</legs>
